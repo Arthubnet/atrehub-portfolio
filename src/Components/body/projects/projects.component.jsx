@@ -20,7 +20,7 @@ class Project extends Component {
       {
         title: "React + Python API",
         description:
-          "React Image gallery app created with my own Python API that communicates to Unsplash API",
+          "React Image-gallery app created with my own Python API that communicates to Unsplash API. Used Bootstrap for simplicity and saving time.",
         image: api,
         color: "#4caf50",
       },
@@ -45,8 +45,9 @@ class Project extends Component {
       <div className="project__section">
         <h2>Check my Projects</h2>
         <div className="project__section__container">
-          {this.state.card.map(
-            ({ title, description, image, color }, index) => (
+          {this.state.card
+            .filter((item, index) => index < 3)
+            .map(({ title, description, image, color }, index) => (
               <ProjectCard
                 key={index}
                 title={title}
@@ -54,8 +55,7 @@ class Project extends Component {
                 image={image}
                 color={color}
               />
-            )
-          )}
+            ))}
         </div>
       </div>
     );
