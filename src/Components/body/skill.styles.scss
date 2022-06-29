@@ -1,0 +1,25 @@
+.skill {
+  flex: 0 0 20%;
+  text-align: center;
+  margin: 20px 0 12px 0;
+  &__image {
+    display: inline-block;
+    margin: 0 auto;
+    width: 61px;
+    height: 61px;
+    background-size: cover;
+    background-position: center;
+    /*  img {
+      width: 61px;
+      height: 61px;
+    } */
+  }
+  &__title {
+    h3 {
+      font-size: 18px;
+      color: #344767;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+  }
+}

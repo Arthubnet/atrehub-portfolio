@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Montserrat:wght@500&family=Nunito+Sans:ital,wght@1,200&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap");
+
+.body__about {
+  width: 40%;
+  padding: 165px 0;
+  margin: 0 auto;
+
+  &__followers {
+    display: flex;
+    gap: 25px;
+    cursor: default;
+    p {
+      font-size: 16px;
+    }
+    span {
+      font-weight: 700;
+      color: rgb(52, 71, 103);
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a.about-link {
+      display: inline-block;
+      font-size: 20px;
+      color: rgba(26, 155, 232, 0.8);
+      cursor: pointer;
+      font-weight: 400;
+      letter-spacing: 0.125px;
+      overflow-wrap: break-word;
+      transition: all 0.2s ease;
+    }
+    a.about-link:hover span.about-link__span {
+      transform: translateY(2px);
+      opacity: 1;
+    }
+    a.about-link:hover {
+      transform: translateY(-3px);
+      color: rgb(26, 155, 232);
+    }
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.about-link__span {
+  display: block;
+  font-size: 12px;
+  color: #555;
+  transform: translateY(-20px);
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.more-about:hover img {
+  transform: translateX(10px);
+}
