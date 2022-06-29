@@ -11,28 +11,28 @@ class Project extends Component {
   state = {
     card: [
       {
-        title: "HTML + CSS",
+        title: "HTML, CSS, JS",
         description:
-          "Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ...",
+          "Redesign of Billboard website, using JS + SCSS, no libraries and toolkits were used",
         image: js,
         color: "#00acc1",
       },
       {
-        title: "Python API",
+        title: "React + Python API",
         description:
-          "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
+          "React Image gallery app created with my own Python API that communicates to Unsplash API",
         image: api,
         color: "#4caf50",
       },
       {
-        title: "Authentication",
+        title: "React: Redux, Authentication",
         description:
-          "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
+          "E-commerce project on React. Redux state management, Firebase DB and Authentication.",
         image: auth,
         color: "#f44336",
       },
       {
-        title: "Vanilla JS",
+        title: "Coming soon",
         description:
           "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
         image: game,
