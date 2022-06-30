@@ -1,12 +1,10 @@
 .project__card {
-  flex: 0 0 23%;
+  flex: 0 0 32%;
   &__picture {
-    img {
-      width: 300px;
-      height: 200px;
-      border-radius: 8px;
-      box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.2),
-        0rem 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06);
+    width: 100%;
+    font-size: 0;
+    &:hover {
+      cursor: pointer;
     }
   }
   &__body {
