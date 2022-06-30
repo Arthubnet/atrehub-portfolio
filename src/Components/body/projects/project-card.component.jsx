@@ -10,9 +10,9 @@ function ProjectCard({ title, description, image, color }) {
       <div className="project__card__body">
         <h3 style={{ color: color }}>{title}</h3>
         <p>{description}</p>
-        <div className="project__card__body__links">
+        {/*  <div className="project__card__body__links">
           <a href="#">Read More</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
