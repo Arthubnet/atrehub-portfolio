@@ -5,19 +5,6 @@
   padding: 165px 0;
   margin: 0 auto;
 
-  &__followers {
-    display: flex;
-    gap: 25px;
-    cursor: default;
-    p {
-      font-size: 16px;
-    }
-    span {
-      font-weight: 700;
-      color: rgb(52, 71, 103);
-    }
-  }
-
   &__title {
     display: flex;
     justify-content: space-between;

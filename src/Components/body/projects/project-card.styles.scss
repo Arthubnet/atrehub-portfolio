@@ -1,6 +1,9 @@
 .project__card {
   flex: 0 0 23%;
   &__picture {
+    &:hover {
+      cursor: pointer;
+    }
     img {
       width: 300px;
       height: 200px;

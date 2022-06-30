@@ -8,7 +8,6 @@ function AboutPage() {
   return (
     <div className="body__about">
       <h2>React Web Developer</h2>
-      <div className="body__about__followers"></div>
       <p>
         My name is Artem Trehub, I'm a web-developer with 12+ years of
         experience in IT. Mostly creating Web Apps on React but also proficient
