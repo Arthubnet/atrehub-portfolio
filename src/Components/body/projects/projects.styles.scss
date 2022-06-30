@@ -1,5 +1,5 @@
 .project__section {
-  width: 70%;
+  width: 85%;
   margin: 100px auto 0 auto;
   h2 {
     margin: 50px 0;
@@ -16,12 +16,18 @@
     align-items: unset;
   }
   .project__section {
+    width: 60%;
     &__container {
       flex-direction: column;
       gap: 30px;
       .project__card {
         flex: 0 0 100%;
       }
+    }
+  }
+  .skills__container {
+    .skill {
+      flex: 0 0 33%;
     }
   }
 }
