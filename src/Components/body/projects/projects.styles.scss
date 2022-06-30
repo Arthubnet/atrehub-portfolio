@@ -9,3 +9,15 @@
     justify-content: space-between;
   }
 }
+
+@media all and (max-width: 1200px) {
+  .project__section {
+    &__container {
+      flex-direction: column;
+      gap: 30px;
+      .project__card {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
