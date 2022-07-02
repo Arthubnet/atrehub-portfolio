@@ -2,23 +2,34 @@ import React, { useState } from "react";
 import FormInput from "../form-input.component";
 import Button from "../Button.component";
 import "./contact.styles.scss";
+import { addCollection } from "./../../firebase/firebase.utils";
 
-function Contact() {
-  let [name, setName] = useState("");
-  let [email, setEmail] = useState("");
-  let [comment, setComment] = useState("");
+function Contact({ setIsLoading }) {
+  let [user, setUser] = useState({ name: "", email: "", message: "" });
+  let { name, email, message } = user;
 
-  let handleChangeName = (e) => {
-    setName(e.target.value);
+  let handleChange = (e) => {
+    let { name, value } = e.target;
+    setUser({ ...user, [name]: value });
   };
-  let handleChangeEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  let handleChangeComment = (e) => {
-    setComment(e.target.value);
-  };
-  let onSubmit = () => {
-    console.log("Form submitted");
+
+  let handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading({ spinner: true });
+    try {
+      await addCollection(name, email, message, email);
+      setIsLoading({ spinner: false, popup: true });
+      Array.from(
+        document.querySelectorAll("input").forEach((input) => {
+          input.value = "";
+        })
+      );
+    } catch (error) {}
+    setUser({
+      nameame: "",
+      email: "",
+      message: "",
+    });
   };
   return (
     <div className="contact__container">
@@ -31,26 +42,32 @@ function Contact() {
         </p>
       </div>
       <div className="contact__form">
-        <form onSubmit={onSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="first__two">
             <FormInput
+              name="name"
               value={name}
-              onChange={handleChangeName}
+              onChange={handleChange}
               type="text"
-              name={"Your Name"}
+              label={"Your Name"}
+              required={true}
             />
             <FormInput
+              name="email"
               value={email}
-              onChange={handleChangeEmail}
+              onChange={handleChange}
               type="email"
-              name={"Your Email"}
+              label={"Your Email"}
+              required={true}
             />
           </div>
           <FormInput
-            value={comment}
-            onChange={handleChangeComment}
+            name="message"
+            value={message}
+            onChange={handleChange}
             type="text"
-            name={"Your Message"}
+            label={"Your Message"}
+            required={true}
           />
           <Button form="form">Send Message</Button>
         </form>

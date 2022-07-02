@@ -1,0 +1,37 @@
+.success-popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+
+  &__window {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    p {
+      font-weight: 400;
+    }
+    button {
+      background: #1a73e8;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1.5% 6%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

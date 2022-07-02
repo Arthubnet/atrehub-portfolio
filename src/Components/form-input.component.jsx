@@ -1,16 +1,12 @@
 import React from "react";
 import "./form-input.styles.scss";
 
-function FormInput({ name, type, onChange, value }) {
+function FormInput({ label, onChange, value, ...rest }) {
   return (
     <div className="form__group">
-      <input
-        onChange={onChange}
-        type={type}
-        className={` form__group__input `}
-      />
+      <input onChange={onChange} {...rest} className={` form__group__input `} />
       <label className={`${value ? "active" : ""} form__group__label`}>
-        {name}
+        {label}
       </label>
     </div>
   );
