@@ -7,8 +7,8 @@ import reduxImg from "./body/img/redux2.png";
 import dockerImg from "./body/img/docker2.png";
 import githubImg from "./body/img/github2.png";
 import mongodbImg from "./body/img/mongoDB2.png";
-import photoshopImg from "./body/img/photoshop2.svg.png";
 import bootstrapImg from "./body/img/bootstrap-logo.svg";
+import photoshopImg from "./body/img/photoshop2.svg.png";
 
 export default [
   htmlImg,
