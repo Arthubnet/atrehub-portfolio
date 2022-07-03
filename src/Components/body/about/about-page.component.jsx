@@ -1,7 +1,6 @@
 import React from "react";
 import "./about-page.styles.scss";
 
-import arrow from "../img/arrow2.png";
 import Button from "../../Button.component";
 
 function AboutPage() {

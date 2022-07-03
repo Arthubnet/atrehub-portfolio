@@ -9,7 +9,6 @@ import githubImg from "./body/img/github2.png";
 import mongodbImg from "./body/img/mongoDB2.png";
 import photoshopImg from "./body/img/photoshop2.svg.png";
 import bootstrapImg from "./body/img/bootstrap-logo.svg";
-import backgroundImg from "./body/img/unsplash1.jpg";
 
 export default [
   htmlImg,
@@ -23,5 +22,4 @@ export default [
   mongodbImg,
   photoshopImg,
   bootstrapImg,
-  backgroundImg,
 ];
