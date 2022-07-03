@@ -66,13 +66,13 @@ let SkillsPage = () => {
     },
     {
       picture: images[9],
-      title: "PhotoShop",
+      title: "Bootstrap",
       description:
         "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.",
     },
     {
       picture: images[10],
-      title: "Bootstrap",
+      title: "PhotoShop",
       description:
         "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.",
     },
