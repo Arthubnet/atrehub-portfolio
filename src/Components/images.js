@@ -20,6 +20,6 @@ export default [
   dockerImg,
   githubImg,
   mongodbImg,
-  photoshopImg,
   bootstrapImg,
+  photoshopImg,
 ];
