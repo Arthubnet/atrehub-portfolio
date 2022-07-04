@@ -14,6 +14,7 @@ function AboutPage() {
         so I also enjoy UX and everything related to user experience(interaction
         analysis, psychology). Always open and excited for a new project, reach
         out to me so we can create something exciting.
+        {`Here is fake ${process.env.REACT_APP_FAKE}`}
       </p>
       <div className="body__about__title">
         <a
