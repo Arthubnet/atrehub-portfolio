@@ -32,7 +32,7 @@ class Project extends Component {
           "E-commerce project on React. Redux state management, Firebase DB and Authentication.",
         image: auth,
         color: "#f44336",
-        link: "",
+        link: "https://fred-ecommerce-project.herokuapp.com/",
       },
       {
         title: "Coming soon",
