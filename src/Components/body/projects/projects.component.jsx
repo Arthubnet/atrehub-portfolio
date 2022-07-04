@@ -21,7 +21,7 @@ class Project extends Component {
       {
         title: "React + Python API",
         description:
-          "React Image-gallery app created with my own Python API that communicates to Unsplash API. Used Bootstrap for simplicity and saving time.",
+          "Full stack image-gallery app based on React, Python Flask, MongoDB and Unsplash API. Used Bootstrap for simplicity.",
         image: api,
         color: "#4caf50",
         link: "",
@@ -29,7 +29,7 @@ class Project extends Component {
       {
         title: "React: Redux, Authentication",
         description:
-          "E-commerce project on React. Redux state management, Firebase DB and Authentication.",
+          "E-commerce project on React. Redux state management, Firebase DB and Authentication, Stripe as payment system",
         image: auth,
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
