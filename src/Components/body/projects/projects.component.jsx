@@ -19,12 +19,12 @@ class Project extends Component {
         link: "https://copyboard.herokuapp.com/",
       },
       {
-        title: "React + Python API",
+        title: "React + Express REST API",
         description:
-          "Full stack image-gallery app based on React, Python Flask, MongoDB and Unsplash API. Used Bootstrap for simplicity.",
+          "Full stack image-gallery app based on React, Node.js Express, MongoDB and Unsplash API. Used Bootstrap for simplicity.",
         image: api,
         color: "#4caf50",
-        link: "",
+        link: "https://images-gallery-frontend.herokuapp.com/",
       },
       {
         title: "React: Redux, Authentication",
@@ -40,7 +40,7 @@ class Project extends Component {
           "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
         image: game,
         color: "#344767",
-        link: "https://images-gallery-frontend.herokuapp.com/",
+        link: "",
       },
     ],
   };
