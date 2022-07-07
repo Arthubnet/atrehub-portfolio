@@ -40,7 +40,7 @@ class Project extends Component {
           "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
         image: game,
         color: "#344767",
-        link: "",
+        link: "https://images-gallery-frontend.herokuapp.com/",
       },
     ],
   };
