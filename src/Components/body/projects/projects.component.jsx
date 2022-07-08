@@ -17,22 +17,25 @@ class Project extends Component {
         image: js,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
+        github: "https://github.com/Arthubnet/billboard-redesign",
       },
       {
-        title: "React + Express REST API",
+        title: "React, Express REST API, MongoDB",
         description:
           "Full stack image-gallery app based on React, Node.js Express, MongoDB and Unsplash API. Used Bootstrap for simplicity.",
         image: api,
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
+        github: "https://github.com/Arthubnet/images-gallery-frontend",
       },
       {
-        title: "React: Redux, Authentication",
+        title: "React: Redux, Firebase: Database & Authentication",
         description:
-          "E-commerce project on React. Redux state management, Firebase DB and Authentication, Stripe as payment system",
+          "E-commerce project on React. Redux state management, Firebase DB and Authentication, Stripe payment system",
         image: auth,
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
+        github: "https://github.com/Arthubnet/cloth-e-commerce",
       },
       {
         title: "Coming soon",
@@ -41,6 +44,7 @@ class Project extends Component {
         image: game,
         color: "#344767",
         link: "",
+        github: "",
       },
     ],
   };
@@ -51,16 +55,19 @@ class Project extends Component {
         <div className="project__section__container">
           {this.state.card
             .filter((item, index) => index < 3)
-            .map(({ title, description, image, color, link }, index) => (
-              <ProjectCard
-                key={index}
-                title={title}
-                description={description}
-                image={image}
-                color={color}
-                link={link}
-              />
-            ))}
+            .map(
+              ({ title, description, image, color, link, github }, index) => (
+                <ProjectCard
+                  key={index}
+                  title={title}
+                  description={description}
+                  image={image}
+                  color={color}
+                  link={link}
+                  github={github}
+                />
+              )
+            )}
         </div>
       </div>
     );

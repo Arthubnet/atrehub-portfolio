@@ -1,7 +1,7 @@
 import React from "react";
 import "./project-card.styles.scss";
 
-function ProjectCard({ title, description, image, color, link }) {
+function ProjectCard({ title, description, image, color, link, github }) {
   return (
     <div className="project__card">
       <div className="project__card__picture">
@@ -12,6 +12,9 @@ function ProjectCard({ title, description, image, color, link }) {
       <div className="project__card__body">
         <h3 style={{ color: color }}>{title}</h3>
         <p>{description}</p>
+        <a href={github} target="__blank">
+          GitHub
+        </a>
       </div>
     </div>
   );

@@ -36,8 +36,8 @@ function Contact({ setIsLoading }) {
       <div className="contact__title">
         <h2>Work with me</h2>
         <p>
-          Let me know what you're looking for. I'll take a look and see if this
-          could be the start of something beautiful.
+          I'm friendly and available to chat. Reach out to me about your new
+          project anytime and I will answer to your request within 24 hours.
         </p>
       </div>
       <div className="contact__form">
