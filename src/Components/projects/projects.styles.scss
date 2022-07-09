@@ -1,10 +1,9 @@
 .project__section {
   width: 85%;
   margin: 100px auto 0 auto;
-  h2 {
-    margin: 50px 0;
-  }
+
   &__container {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
   }

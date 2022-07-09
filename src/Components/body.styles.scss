@@ -22,10 +22,7 @@
 
 @media all and (max-width: 1200px) {
   .body__about {
-    &__title {
-      flex-direction: column;
-      align-items: unset;
-    }
+    width: 80%;
   }
 
   .project__section {
@@ -49,15 +46,24 @@
       flex: 0 0 33%;
     }
   }
+  .contact__container {
+    width: 80%;
+  }
 }
 
 @media all and (max-width: 750px) {
   .body__about {
-    width: 80%;
+    text-align: center;
+    padding: 150px 0 100px 0;
+    &__title {
+      flex-direction: column;
+      align-items: unset;
+    }
   }
 
   .project__section {
     width: 80%;
+    text-align: center;
     &__container {
       .project__card {
         &__picture {
@@ -67,6 +73,14 @@
     }
   }
   .contact__container {
-    width: 80%;
+    margin: 100px auto 0 auto;
+    .contact__form {
+      .first__two {
+        margin-bottom: 80px;
+        input {
+          width: 80%;
+        }
+      }
+    }
   }
 }
