@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import Skill from "./skill.component";
+import Skill from "./Skill.component";
 import { motion } from "framer-motion";
 
-import images from "../images";
+import images from "./images";
 
 import "./skills-page.styles.scss";
 

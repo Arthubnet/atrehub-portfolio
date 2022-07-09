@@ -1,7 +1,7 @@
 import React from "react";
 import "./about-page.styles.scss";
 
-import Button from "../../Button.component";
+import Button from "../Button.component";
 
 function AboutPage() {
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import FormInput from "../form-input.component";
+import FormInput from "../FormInput.component";
 import Button from "../Button.component";
 import "./contact.styles.scss";
-import { addCollection } from "./../../firebase/firebase.utils";
+import { addCollection } from "../../firebase/firebase.utils";
 
 function Contact({ setIsLoading }) {
   let [user, setUser] = useState({ name: "", email: "", message: "" });

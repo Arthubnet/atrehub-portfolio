@@ -1,12 +1,12 @@
 import React from "react";
 import { Component } from "react";
-import ProjectCard from "./project-card.component";
+import ProjectCard from "./ProjectCard.component";
 import "./projects.styles.scss";
 
-import api from "../img/API2.png";
-import js from "../img/Javascript1.jpg";
-import auth from "../img/auth2.jpeg";
-import game from "../img/game.jpg";
+import api from "../../assets/img/API2.png";
+import js from "../../assets/img/Javascript1.jpg";
+import auth from "../../assets/img/auth2.jpeg";
+import game from "../../assets/img/game.jpg";
 class Project extends Component {
   state = {
     card: [
