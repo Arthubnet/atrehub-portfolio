@@ -83,4 +83,18 @@
       }
     }
   }
+  .success-popup {
+    &__window {
+      width: 80%;
+      height: 20%;
+      text-align: center;
+      p {
+        width: 80%;
+      }
+      button {
+        padding: 2% 10%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
