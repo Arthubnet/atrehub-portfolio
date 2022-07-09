@@ -54,28 +54,16 @@
 @media all and (max-width: 750px) {
   .body__about {
     width: 80%;
-    &__title {
-      flex-direction: column;
-      align-items: unset;
-    }
   }
 
   .project__section {
-    width: 80;
-    display: flex;
-    flex-direction: column;
+    width: 80%;
     &__container {
-      width: 100%;
-      flex-direction: column;
-      gap: 30px;
       .project__card {
-        flex: 0 0 100%;
+        &__picture {
+          height: 30vh;
+        }
       }
-    }
-  }
-  .skills__container {
-    .skill {
-      flex: 0 0 33%;
     }
   }
   .contact__container {
