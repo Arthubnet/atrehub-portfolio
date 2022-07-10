@@ -3,27 +3,27 @@ import { Component } from "react";
 import ProjectCard from "./ProjectCard.component";
 import "./projects.styles.scss";
 
-import api from "../../assets/img/API2.png";
-import js from "../../assets/img/Javascript1.jpg";
-import auth from "../../assets/img/auth2.jpeg";
-import game from "../../assets/img/game.jpg";
+import mern from "../../assets/img/mern.jpg";
+import rrf from "../../assets/img/rrf.jpg";
+import vanillajs from "../../assets/img/vanillajs.png";
+
 class Project extends Component {
   state = {
     card: [
       {
-        title: "HTML, CSS, JS",
+        title: "HTML, JS, SCSS",
         description:
           "Redesign of Billboard website, using JS + SCSS, no libraries and toolkits were used",
-        image: js,
+        image: vanillajs,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
         github: "https://github.com/Arthubnet/billboard-redesign",
       },
       {
-        title: "React, Express REST API, MongoDB",
+        title: "MERN(MongoDB, Express, React, Node.js)",
         description:
-          "Full stack image-gallery app based on React, Node.js Express, MongoDB and Unsplash API. Used Bootstrap for simplicity.",
-        image: api,
+          "Full stack image-gallery app based on MERN and Unsplash API. Used Bootstrap for simplicity.",
+        image: mern,
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
         github: "https://github.com/Arthubnet/images-gallery-frontend",
@@ -32,7 +32,7 @@ class Project extends Component {
         title: "React: Redux, Firebase: Database & Authentication",
         description:
           "E-commerce project on React. Redux state management, Firebase DB and Authentication, Stripe payment system",
-        image: auth,
+        image: rrf,
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
         github: "https://github.com/Arthubnet/cloth-e-commerce",
@@ -41,7 +41,7 @@ class Project extends Component {
         title: "Coming soon",
         description:
           "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
-        image: game,
+        image: "",
         color: "#344767",
         link: "",
         github: "",
