@@ -14,7 +14,7 @@ function AboutPage() {
         experience in IT. Mostly creating Web Apps on React but also proficient
         with pure JavaScript, CSS and HTML. My path in Web started as a marketer
         so I also enjoy interaction analysis(Google Analytics) and Web
-        Marketing(PPC: Google Ads, Yandex Direct, SSM: Facebook Ads). Always
+        Marketing(PPC: Google Ads, Yandex Direct; SSM: Facebook Ads). Always
         open and excited for a new project, reach out to me so we can create
         something exciting.
       </p>
