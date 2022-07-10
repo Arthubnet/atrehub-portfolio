@@ -53,17 +53,10 @@
 
 @media all and (max-width: 750px) {
   .body__about {
-    text-align: center;
     padding: 150px 0 100px 0;
-    &__title {
-      flex-direction: column;
-      align-items: unset;
-    }
   }
-
   .project__section {
     width: 80%;
-    text-align: center;
     &__container {
       .project__card {
         &__picture {
@@ -94,6 +87,22 @@
       button {
         padding: 2% 10%;
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .body__about {
+    padding: 100px 0 0 0;
+    span {
+      display: inline-block;
+    }
+    &__title {
+      flex-direction: column;
+      align-items: inherit;
+      button {
+        align-self: baseline;
       }
     }
   }

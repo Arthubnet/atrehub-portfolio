@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./skill.styles.scss";
-import { motion } from "framer-motion";
 
-function Skill({ title, picture, description }) {
+function Skill({ title, picture }) {
   return (
-    <motion.div className="skill">
+    <div className="skill">
       <div
         style={{
           backgroundImage: `url(${picture})`,
@@ -15,9 +14,8 @@ function Skill({ title, picture, description }) {
       </div>
       <div className="skill__title">
         <h3>{title}</h3>
-        {/* <p>{description}</p> */}
       </div>
-    </motion.div>
+    </div>
   );
 }
 

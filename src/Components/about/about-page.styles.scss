@@ -1,12 +1,13 @@
 .body__about {
   width: 40%;
-  padding: 165px 0;
+  padding: 165px 0 0 0;
   margin: 0 auto;
 
   &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     a.about-link {
       display: inline-block;
       font-size: 20px;

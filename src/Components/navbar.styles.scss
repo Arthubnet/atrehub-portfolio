@@ -11,6 +11,9 @@
   width: 100%;
   min-height: 20rem;
   position: relative;
+  @media all and (max-width: 600px) {
+    min-height: 15rem;
+  }
   &__picture {
     position: absolute;
     left: 50%;
