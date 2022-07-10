@@ -31,10 +31,6 @@ function AboutPage() {
           </span>
         </a>
         <Button cv={"cv"}> Download CV</Button>
-        {/*  <div className="skills">
-          <p>My best skills</p>
-          <div className="skills-icons"></div>
-        </div> */}
       </div>
     </div>
   );
