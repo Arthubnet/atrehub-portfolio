@@ -1,6 +1,9 @@
 .project__section {
   width: 85%;
   margin: 100px auto 0 auto;
+  @media all and (max-width: 450px) {
+    margin: 50px auto 0 auto;
+  }
 
   &__container {
     margin-top: 20px;
