@@ -10,14 +10,11 @@ function AboutPage() {
         React <span>Web Developer</span>
       </h2>
       <p>
-        My name is Artem Trehub, I'm a web-developer with 12+ years of
-        experience in IT. Mostly creating Web Apps on React but also proficient
-        with pure JavaScript, CSS and HTML. My path in Web started as a marketer
-        so I also enjoy interaction analysis(Google Analytics) and Web
-        Marketing(PPC: Google Ads, Yandex Direct; SSM: Facebook Ads). Always
-        open and excited for a new project, reach out to me so we can create
-        something exciting.
+        My name is Artem Trehub, I'm mostly creating web apps through JS React,
+        however also have experience in developing full stuck applications.
+        Check out my latest projects below.
       </p>
+      {/*
       <div className="body__about__title">
         <a
           className="about-link"
@@ -30,8 +27,10 @@ function AboutPage() {
             https://www.linkedin.com/in/artem-trehub/
           </span>
         </a>
-        <Button cv={"cv"}> Download CV</Button>
-      </div>
+         <a href="">
+          <Button cv={"cv"}> Download CV</Button>
+        </a> 
+      </div>*/}
     </div>
   );
 }

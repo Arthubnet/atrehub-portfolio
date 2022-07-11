@@ -35,13 +35,17 @@
       justify-content: space-between;
     }
     a {
+      width: 20%;
       display: inline-block;
-      color: rgb(26, 115, 232);
-      font-weight: 400;
-      font-size: 16px;
+      font-size: 0;
+      padding-top: 5px;
       &:hover {
         text-decoration: underline;
         cursor: pointer;
+        opacity: 0.7;
+      }
+      img {
+        width: 100%;
       }
     }
   }

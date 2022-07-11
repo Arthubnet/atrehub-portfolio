@@ -1,6 +1,8 @@
 import React from "react";
 import "./project-card.styles.scss";
 
+import gitBtn from "../../../src/assets/img/git1.png";
+
 function ProjectCard({ title, description, image, color, link, github }) {
   return (
     <div className="project__card">
@@ -13,7 +15,7 @@ function ProjectCard({ title, description, image, color, link, github }) {
         <h3 style={{ color: color }}>{title}</h3>
         <p>{description}</p>
         <a href={github} target="__blank">
-          GitHub
+          <img src={gitBtn} />
         </a>
       </div>
     </div>
