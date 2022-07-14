@@ -10,9 +10,9 @@ function AboutPage() {
         React <span>Web Developer</span>
       </h2>
       <p>
-        My name is Artem Trehub, I'm mostly creating web apps through JS React,
-        however also have experience in developing full stuck applications.
-        Check out my latest projects below.
+        My name is Artem Trehub, I primarily create web apps through JS React,
+        but also have experience in developing full stack applications.
+        To learn more, take a look at my latest projects below.
       </p>
       {/*
       <div className="body__about__title">

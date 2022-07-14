@@ -36,8 +36,7 @@ function Contact({ setIsLoading }) {
       <div className="contact__title">
         <h2>Work with me</h2>
         <p>
-          Reach out to me about your new project anytime and I will answer to
-          your request within 24 hours.
+          Let's work together to create your dream website. Send me your inquiries, and I'll respond within 24 hours'
         </p>
       </div>
       <div className="contact__form">
