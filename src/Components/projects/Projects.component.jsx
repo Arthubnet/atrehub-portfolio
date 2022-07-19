@@ -5,7 +5,7 @@ import "./projects.styles.scss";
 
 import mern from "../../assets/img/mern.jpg";
 import rrf from "../../assets/img/rrf.jpg";
-import vanillajs from "../../assets/img/vanillajs.png";
+import js from "../../assets/img/js.gif";
 
 class Project extends Component {
   state = {
@@ -14,19 +14,10 @@ class Project extends Component {
         title: "HTML, JS, SCSS",
         description:
           "Redesign of Billboard website, using JS + SCSS, no libraries and toolkits were used",
-        image: vanillajs,
+        image: js,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
         github: "https://github.com/Arthubnet/billboard-redesign",
-      },
-      {
-        title: "MERN(MongoDB, Express, React, Node.js)",
-        description:
-          "Full stack image-gallery app based on MERN and Unsplash API. Used Bootstrap for simplicity.",
-        image: mern,
-        color: "#4caf50",
-        link: "https://images-gallery-frontend.herokuapp.com/",
-        github: "https://github.com/Arthubnet/images-gallery-frontend",
       },
       {
         title: "React: Redux, Firebase: Database & Authentication",
@@ -37,6 +28,16 @@ class Project extends Component {
         link: "https://fred-ecommerce-project.herokuapp.com/",
         github: "https://github.com/Arthubnet/cloth-e-commerce",
       },
+      {
+        title: "MERN(MongoDB, Express, React, Node.js)",
+        description:
+          "Full stack image-gallery app based on MERN and Unsplash API. Used Bootstrap for simplicity.",
+        image: mern,
+        color: "#4caf50",
+        link: "https://images-gallery-frontend.herokuapp.com/",
+        github: "https://github.com/Arthubnet/images-gallery-frontend",
+      },
+
       {
         title: "Coming soon",
         description:
