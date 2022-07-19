@@ -5,7 +5,10 @@ import "./projects.styles.scss";
 
 import mern from "../../assets/img/mern.jpg";
 import rrf from "../../assets/img/rrf.jpg";
-import js from "../../assets/img/js.gif";
+import js from "../../assets/img/vanillajs.png";
+import jsgit from "../../assets/img/js.gif";
+import eCommerce from "../../assets/img/egif.gif";
+import imgGalery from "../../assets/img/ggif.gif";
 
 class Project extends Component {
   state = {
@@ -18,6 +21,7 @@ class Project extends Component {
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
         github: "https://github.com/Arthubnet/billboard-redesign",
+        gif: jsgit,
       },
       {
         title: "React: Redux, Firebase: Database & Authentication",
@@ -27,6 +31,7 @@ class Project extends Component {
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
         github: "https://github.com/Arthubnet/cloth-e-commerce",
+        gif: eCommerce,
       },
       {
         title: "MERN(MongoDB, Express, React, Node.js)",
@@ -36,6 +41,7 @@ class Project extends Component {
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
         github: "https://github.com/Arthubnet/images-gallery-frontend",
+        gif: imgGalery,
       },
 
       {
@@ -57,7 +63,10 @@ class Project extends Component {
           {this.state.card
             .filter((item, index) => index < 3)
             .map(
-              ({ title, description, image, color, link, github }, index) => (
+              (
+                { title, description, image, color, link, github, gif },
+                index
+              ) => (
                 <ProjectCard
                   key={index}
                   title={title}
@@ -66,6 +75,7 @@ class Project extends Component {
                   color={color}
                   link={link}
                   github={github}
+                  gif={gif}
                 />
               )
             )}
