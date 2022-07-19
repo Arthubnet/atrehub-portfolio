@@ -36,7 +36,7 @@ class Project extends Component {
       {
         title: "MERN(MongoDB, Express, React, Node.js)",
         description:
-          "Full stack image-gallery app based on MERN and Unsplash API. Used Bootstrap for simplicity.",
+          "Full stack image-gallery app based on MERN and Unsplash API. Used Bootstrap for simplicity",
         image: mern,
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
