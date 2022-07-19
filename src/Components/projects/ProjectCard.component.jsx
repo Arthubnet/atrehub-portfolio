@@ -14,9 +14,14 @@ function ProjectCard({ title, description, image, color, link, github }) {
       <div className="project__card__body">
         <h3 style={{ color: color }}>{title}</h3>
         <p>{description}</p>
-        <a href={github} target="__blank">
-          <img src={gitBtn} />
-        </a>
+        <div class="project__card__links">
+          <a href={github} target="__blank">
+            <img src={gitBtn} />
+          </a>
+          <a href={link} target="__blank">
+            <p>Open The Project</p>
+          </a>
+        </div>
       </div>
     </div>
   );

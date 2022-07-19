@@ -48,5 +48,23 @@
         width: 100%;
       }
     }
+    .project__card__links {
+      padding-top: 2%;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 40%;
+      }
+      a {
+        min-width: 40%;
+      }
+
+      P {
+        min-width: 50%;
+        text-align: end;
+        color: blue;
+        cursor: pointer;
+      }
+    }
   }
 }
