@@ -1,0 +1,14 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  &__list {
+    display: flex;
+    gap: 20px;
+    .skill {
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
