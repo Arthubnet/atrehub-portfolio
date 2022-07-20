@@ -2,6 +2,9 @@
   width: 40%;
   padding: 165px 0 0 0;
   margin: 0 auto;
+  p {
+    text-align: justify;
+  }
 
   &__title {
     display: flex;
