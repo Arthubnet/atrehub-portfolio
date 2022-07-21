@@ -29,12 +29,7 @@ function ProjectCard({
         </div>
         <p>{description.map((item) => item)}</p>
         <div className="project__card__links">
-          <Button link={link}>
-            Open Project
-            {/*  <a href={link} target="__blank">
-            View Project
-          </a> */}
-          </Button>
+          <Button link={link}>Open Project</Button>
           <a className="github-link" href={github} target="_blank">
             <img src={gitBtn} alt="github-button" />
           </a>

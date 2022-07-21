@@ -6,19 +6,19 @@ import SkillsPreview from "./SkillsPreview.component";
 import { ReactComponent as GitIcon } from "../../assets/img/github.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/img/linkedin2.svg";
 
-import jsIcon from "../../assets/img/js2.svg.png";
+import jsIcon from "../../assets/img/js.svg.png";
 import reactIcon from "../../assets/img/react.svg";
-import cssIcon from "../../assets/img/css2.png";
-import myself from "../../assets/img/pic2.jpg";
+import cssIcon from "../../assets/img/sass.svg";
+import myself from "../../assets/img/pic.jpg";
 
 function AboutPage() {
   let previews = [
     {
       title: "Best Skill On",
       icons: [
-        { icon: jsIcon, alt: "javascript-icon" },
-        { icon: reactIcon, alt: "react-icon" },
-        { icon: cssIcon, alt: "css-icon" },
+        { icon: reactIcon, alt: "react-icon", size: "large" },
+        { icon: cssIcon, alt: "css-icon", size: "large" },
+        { icon: jsIcon, alt: "javascript-icon", size: "large" },
       ],
     },
     {

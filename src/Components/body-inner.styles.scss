@@ -40,10 +40,6 @@ p {
   margin: 20px 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .body__inner {
   width: 97vw;
   border-radius: 10px;
@@ -115,4 +111,25 @@ a {
       }
     }
   }
+}
+
+/* Scrollbar */
+
+/* Scrolbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212123;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
 }

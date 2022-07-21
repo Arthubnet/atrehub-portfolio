@@ -17,7 +17,7 @@ class Project extends Component {
         tech: "Frontend",
         title: "Copyboard",
         description: [
-          <p>
+          <p key={1}>
             Redesign of Billboard website, with my own{" "}
             <span>JavaScript music player</span> that provides all the needed
             functionality to listen to music while reading news and serfing the
@@ -36,7 +36,7 @@ class Project extends Component {
         tech: "Full Stack",
         title: "Fred E-Commerce",
         description: [
-          <p>
+          <p key={2}>
             E-commerce project on React. Well designed Components with Redux
             state management makes the app scalable to any production size.
             Personalised cart, Payment system and Efficient routing provides
@@ -64,7 +64,7 @@ class Project extends Component {
         tech: "MERN Stack",
         title: "Images Gallery",
         description: [
-          <p>
+          <p key={3}>
             MERN Stack app that retrieves random images from Unsplash API based
             on search input and provides the feature to save/delete specific
             image to/from our MongoDB database. The app fetches DB through our{" "}

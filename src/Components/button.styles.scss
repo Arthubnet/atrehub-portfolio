@@ -7,6 +7,10 @@ $green: #2e8b57;
   border: 3px solid black;
   -webkit-transition: padding 0.3s ease-in-out;
   transition: padding 0.3s ease-in-out;
+  background: transparent;
+  font-size: 1rem;
+  font-family: "Poppins";
+
   &:before {
     content: "";
     position: absolute;

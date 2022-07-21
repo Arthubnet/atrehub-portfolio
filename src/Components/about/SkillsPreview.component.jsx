@@ -7,10 +7,10 @@ function SkillsPreview({ title, icons }) {
     <div className="skills-preview">
       <h6>{title}</h6>
       <div className="skills-preview__icons">
-        {icons.map((icon, index) =>
+        {icons.map((item, index) =>
           //prettier-ignore
-          <div key={index} className={`${icon.link ? "link" : null} skills-preview__icons-icon`}>
-            {icon.link ? <a href={icon.link} target="_blank"><icon.icon /></a> : <img key={index} src={icon.icon} alt={icon.alt}></img>  }
+          <div key={index} className={`${item.link ? "link" : ''} ${item.size ? 'large' : ''} skills-preview__icons-icon`}>
+            {item.link ? <a href={item.link} target="_blank"><item.icon /></a> : <img key={index} src={item.icon} alt={item.alt}></img>  }
           </div>
         )}
       </div>
