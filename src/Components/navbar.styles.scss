@@ -1,5 +1,10 @@
-.header {
-  text-align: center;
+.navbar {
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
   background-image: linear-gradient(
       195deg,
       rgba(66, 66, 74, 0.5),
@@ -8,13 +13,12 @@
     url(https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   background-size: cover;
   background-position: center;
-  width: 100%;
-  min-height: 20rem;
-  position: relative;
+  z-index: -1;
+
   @media all and (max-width: 600px) {
     min-height: 15rem;
   }
-  &__picture {
+  /* &__picture {
     position: absolute;
     left: 50%;
     bottom: -20px;
@@ -27,34 +31,5 @@
     border-radius: 50%;
     background-color: black;
     z-index: 3;
-  }
-}
-
-.navbar {
-  width: 67%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-
-  &__logo:hover {
-    cursor: pointer;
-  }
-}
-
-.navbar__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-
-  li {
-    display: inline;
-    a {
-      color: white;
-    }
-    a:hover {
-      cursor: pointer;
-    }
-  }
+  } */
 }

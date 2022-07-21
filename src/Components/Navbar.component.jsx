@@ -4,8 +4,8 @@ import "./navbar.styles.scss";
 
 function Navbar() {
   return (
-    <div className="header">
-      <div className="header__picture"></div>
+    <div className="navbar">
+      <div className="navbar__picture"></div>
     </div>
   );
 }

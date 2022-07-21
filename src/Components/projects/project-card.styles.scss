@@ -1,11 +1,78 @@
 .project__card {
-  width: 25%;
+  margin: 0 0 14% 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &:last-child {
+    margin-bottom: 4%;
+  }
+  &__body {
+    min-width: 50%;
+    p {
+      width: 65%;
+      margin-bottom: 3rem;
+      span {
+        background: red;
+      }
+    }
+    .project__card__skills {
+      width: 70%;
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      margin: 1rem 0 1.6rem 0;
+    }
+    .project__card__links {
+      width: 64%;
+      display: flex;
+      justify-content: space-between;
+      .github-link {
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 90px;
+          max-height: 30px;
+          transition: 0.3s ease;
+          &:hover {
+            transform: (scale(1.1));
+          }
+        }
+      }
+    }
+  }
+  &__picture {
+    margin-top: 10%;
+    width: 450px;
+    height: 330px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.2),
+      0rem 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06);
+    &:hover img {
+      opacity: 0;
+    }
+    img {
+      width: 450px;
+      height: 100%;
+      border-radius: 8px;
+
+      transition: 0.3s;
+    }
+  }
+}
+
+/*width: 25%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem,
     rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
   padding: 2%;
   background: whitesmoke;
-  /*   background: linear-gradient(to right bottom, #212428, #16181c); */
+    background: linear-gradient(to right bottom, #212428, #16181c); 
   &__picture {
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,5 +125,4 @@
         max-height: 25px;
       }
     }
-  }
-}
+  } */

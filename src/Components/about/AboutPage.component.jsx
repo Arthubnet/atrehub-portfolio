@@ -2,43 +2,55 @@ import React from "react";
 import "./about-page.styles.scss";
 
 import Button from "../Button.component";
-import Skills from "../Skills.component";
+import SkillsPreview from "./SkillsPreview.component";
+import gitIcon from "../../assets/img/github.svg";
+import linkedinIcon from "../../assets/img/linkedin2.svg";
+import jsIcon from "../../assets/img/js2.svg.png";
+import reactIcon from "../../assets/img/react.svg";
+import cssIcon from "../../assets/img/css2.png";
+import myself from "../../assets/img/pic2.jpg";
 
 function AboutPage() {
+  let previews = [
+    {
+      title: "Best Skill On",
+      icons: [
+        { link: jsIcon, alt: "javascript-icon" },
+        { link: reactIcon, alt: "react-icon" },
+        { link: cssIcon, alt: "css-icon" },
+      ],
+    },
+    {
+      title: "Get In Touch",
+      icons: [{ link: gitIcon }, { link: linkedinIcon }],
+    },
+  ];
   return (
     <div className="body__about">
-      <h1>Artem Trehub</h1>
-      <h3>
-        <span>React</span> Web Developer
-      </h3>
-      <p>
-        My Web path started 12 years ago as Digital Marketing Manager, also ran
-        own marketing business based in Ukraine, Kyiv that operated within
-        Post-Soviet countries for 5 years. User experience and psychology in
-        general was always my passion, but working with developers woke up a new
-        desire to code. After creating my first website I can't stop coding, at
-        the moment primarily create web apps through JS React, but also have
-        experience in developing full stack applications. To learn more, take a
-        look at my latest projects below.
-      </p>
-      <Skills />
-
-      {/* <div className="body__about__title">
-        <a
-          className="about-link"
-          target={"_blank"}
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/artem-trehub/"
-        >
-          More about me
-          <span className="about-link__span">
-            https://www.linkedin.com/in/artem-trehub/
-          </span>
-        </a>
-        <a href="">
-          <Button cv={"cv"}> Download CV</Button>
-        </a>
-      </div> */}
+      <div className="body__about__picture">
+        <img src={myself}></img>
+      </div>
+      <div className="body__about__title">
+        <h2>Artem Trehub</h2>
+        <h3>
+          <span>React</span> Web Developer
+        </h3>
+        <p>
+          My Web path started 12 years ago as Digital Marketing Manager, also
+          ran own marketing business based in Ukraine, Kyiv that operated within
+          Post-Soviet countries for 5 years. User experience and psychology in
+          general was always my passion, but working with developers woke up a
+          new desire to code. After creating my first website I can't stop
+          coding, at the moment primarily create web apps through JS React, but
+          also have experience in developing full stack applications. To learn
+          more, take a look at my latest projects below.
+        </p>
+        <div className="body__about__previews">
+          {previews.map(({ title, icons }, index) => (
+            <SkillsPreview key={index} title={title} icons={icons} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

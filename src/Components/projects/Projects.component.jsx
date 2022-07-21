@@ -3,9 +3,6 @@ import { Component } from "react";
 import ProjectCard from "./ProjectCard.component";
 import "./projects.styles.scss";
 
-import mern from "../../assets/img/mern.jpg";
-import rrf from "../../assets/img/rrf.jpg";
-import js from "../../assets/img/vanillajs.png";
 import jsgit from "../../assets/img/js.gif";
 import eCommerce from "../../assets/img/egif.gif";
 import imgGalery from "../../assets/img/ggif.gif";
@@ -17,37 +14,63 @@ class Project extends Component {
   state = {
     card: [
       {
-        title: "HTML, JS, SCSS",
-        description:
-          "Redesign of Billboard website, using JS + SCSS, no libraries and toolkits were used",
+        tech: "Frontend",
+        title: "Copyboard",
+        description: `Redesign of Billboard website, with my own JS music player that provides all the needed functionality to listen to music while reading news and serfing the website. The project was made only for the portfolio so news are not filled with actual data. Mobile responsive.`,
         image: billboard,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
         github: "https://github.com/Arthubnet/billboard-redesign",
         gif: jsgit,
+        skills: [{ skill: "JavaScript" }, { skill: "CSS" }, { skill: "HTML" }],
       },
       {
-        title: "React: Redux, Firebase: Database & Authentication",
+        tech: "Full Stack",
+        title: "Fred E-Commerce",
         description:
-          "E-commerce project on React. Redux state management, Firebase DB and Authentication, Stripe payment system",
+          "E-commerce project on React. Well designed Comptonents with Redux state management makes the app scalable to any production sizes. Personalised cart, Payment system and Efficient routing provides great user experience. Mobile adaptive",
         image: fred,
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
         github: "https://github.com/Arthubnet/cloth-e-commerce",
         gif: eCommerce,
+        skills: [
+          { skill: "React" },
+          { skill: "Redux" },
+          { skill: "JavaScript" },
+          { skill: "Firebase" },
+          { skill: "Authentication" },
+          { skill: "Storage Session" },
+          { skill: "Stripe" },
+          { skill: "SASS" },
+          { skill: "HTML" },
+        ],
       },
       {
-        title: "MERN(MongoDB, Express, React, Node.js)",
-        description:
-          "Full stack image-gallery app based on MERN and Unsplash API. Used Bootstrap for simplicity",
+        tech: "MERN Stack",
+        title: "Images Gallery",
+        description: `Simple app that retrieves random images from Unsplash API based on search input and provides the feature to save/delete specific image to/from our MongoDB database. The app fetches DB on load and returns saved pictures if any exists. There is same version with Python backend and Docker containers on GitHub`,
         image: gallery,
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
         github: "https://github.com/Arthubnet/images-gallery-frontend",
         gif: imgGalery,
+        skills: [
+          { skill: "React" },
+          { skill: "JavaScript" },
+          { skill: "Node.js" },
+          { skill: "Express.js" },
+          { skill: "MongoDB" },
+          { skill: "Docker" },
+          { skill: "Unsplash API" },
+          { skill: "CRUD" },
+          { skill: "CSS" },
+          { skill: "Bootstrap" },
+        ],
       },
 
       {
+        tech: "MERN Stack",
         title: "Coming soon",
         description:
           "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
@@ -55,19 +78,31 @@ class Project extends Component {
         color: "#344767",
         link: "",
         github: "",
+        gif: imgGalery,
+        skills: [{ skill: "HTML" }, { skill: "CSS" }, { skill: "JavaScript" }],
       },
     ],
   };
   render() {
     return (
       <div className="project__section">
-        <h2>Check my Projects</h2>
         <div className="project__section__container">
+          {/*    <h2 className="project-title">Projects</h2> */}
           {this.state.card
             .filter((item, index) => index < 3)
             .map(
               (
-                { title, description, image, color, link, github, gif },
+                {
+                  title,
+                  description,
+                  image,
+                  color,
+                  link,
+                  github,
+                  gif,
+                  tech,
+                  skills,
+                },
                 index
               ) => (
                 <ProjectCard
@@ -79,6 +114,8 @@ class Project extends Component {
                   link={link}
                   github={github}
                   gif={gif}
+                  tech={tech}
+                  skills={skills}
                 />
               )
             )}
