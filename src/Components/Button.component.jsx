@@ -1,11 +1,17 @@
 import React from "react";
 import "./button.styles.scss";
 
-function Button({ children, form, cv }) {
+function Button({ children, form, link }) {
   return (
-    <button className={`${form ? "form" : ""} ${cv ? "cv" : ""} btn`}>
-      {children}
-    </button>
+    <>
+      {form ? (
+        <button className={`${form ? "form" : ""} btn`}>{children}</button>
+      ) : (
+        <a href={link} target="_blank" className="btn">
+          {children}
+        </a>
+      )}
+    </>
   );
 }
 

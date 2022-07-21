@@ -1,3 +1,49 @@
+$green: #2e8b57;
+
+h1 {
+  color: #071013;
+  font-weight: 500;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #071013;
+  letter-spacing: -0.125px;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0.6rem 0 0.7rem;
+}
+
+p {
+  color: #666;
+  line-height: 1.6em;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .body__inner {
   width: 97vw;
   border-radius: 10px;
@@ -8,6 +54,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #343842;
+  overflow-x: hidden;
   z-index: 10;
 }
 

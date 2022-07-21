@@ -16,7 +16,15 @@ class Project extends Component {
       {
         tech: "Frontend",
         title: "Copyboard",
-        description: `Redesign of Billboard website, with my own JS music player that provides all the needed functionality to listen to music while reading news and serfing the website. The project was made only for the portfolio so news are not filled with actual data. Mobile responsive.`,
+        description: [
+          <p>
+            Redesign of Billboard website, with my own{" "}
+            <span>JavaScript music player</span> that provides all the needed
+            functionality to listen to music while reading news and serfing the
+            website. The project was made only for the portfolio so news are not
+            filled with actual data. Mobile responsive.
+          </p>,
+        ],
         image: billboard,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
@@ -27,8 +35,14 @@ class Project extends Component {
       {
         tech: "Full Stack",
         title: "Fred E-Commerce",
-        description:
-          "E-commerce project on React. Well designed Comptonents with Redux state management makes the app scalable to any production sizes. Personalised cart, Payment system and Efficient routing provides great user experience. Mobile adaptive",
+        description: [
+          <p>
+            E-commerce project on React. Well designed Components with Redux
+            state management makes the app scalable to any production size.
+            Personalised cart, Payment system and Efficient routing provides
+            great <span>UX</span>. Mobile adaptive."
+          </p>,
+        ],
         image: fred,
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
@@ -49,7 +63,16 @@ class Project extends Component {
       {
         tech: "MERN Stack",
         title: "Images Gallery",
-        description: `Simple app that retrieves random images from Unsplash API based on search input and provides the feature to save/delete specific image to/from our MongoDB database. The app fetches DB on load and returns saved pictures if any exists. There is same version with Python backend and Docker containers on GitHub`,
+        description: [
+          <p>
+            MERN Stack app that retrieves random images from Unsplash API based
+            on search input and provides the feature to save/delete specific
+            image to/from our MongoDB database. The app fetches DB through our{" "}
+            <span>REST API</span> on load and returns saved pictures if any
+            exists. There is same version with Python backend and Docker
+            containers on GitHub.
+          </p>,
+        ],
         image: gallery,
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
@@ -60,6 +83,7 @@ class Project extends Component {
           { skill: "JavaScript" },
           { skill: "Node.js" },
           { skill: "Express.js" },
+          { skill: "REST API" },
           { skill: "MongoDB" },
           { skill: "Docker" },
           { skill: "Unsplash API" },
@@ -87,7 +111,7 @@ class Project extends Component {
     return (
       <div className="project__section">
         <div className="project__section__container">
-          {/*    <h2 className="project-title">Projects</h2> */}
+          {/* <h2 className="project-title">Projects</h2> */}
           {this.state.card
             .filter((item, index) => index < 3)
             .map(

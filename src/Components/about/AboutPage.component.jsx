@@ -1,10 +1,11 @@
 import React from "react";
 import "./about-page.styles.scss";
 
-import Button from "../Button.component";
 import SkillsPreview from "./SkillsPreview.component";
-import gitIcon from "../../assets/img/github.svg";
-import linkedinIcon from "../../assets/img/linkedin2.svg";
+
+import { ReactComponent as GitIcon } from "../../assets/img/github.svg";
+import { ReactComponent as LinkedinIcon } from "../../assets/img/linkedin2.svg";
+
 import jsIcon from "../../assets/img/js2.svg.png";
 import reactIcon from "../../assets/img/react.svg";
 import cssIcon from "../../assets/img/css2.png";
@@ -15,14 +16,25 @@ function AboutPage() {
     {
       title: "Best Skill On",
       icons: [
-        { link: jsIcon, alt: "javascript-icon" },
-        { link: reactIcon, alt: "react-icon" },
-        { link: cssIcon, alt: "css-icon" },
+        { icon: jsIcon, alt: "javascript-icon" },
+        { icon: reactIcon, alt: "react-icon" },
+        { icon: cssIcon, alt: "css-icon" },
       ],
     },
     {
       title: "Get In Touch",
-      icons: [{ link: gitIcon }, { link: linkedinIcon }],
+      icons: [
+        {
+          icon: GitIcon,
+          link: "https://github.com/Arthubnet",
+          alt: "github-icon",
+        },
+        {
+          icon: LinkedinIcon,
+          link: "https://www.linkedin.com/in/artem-trehub/",
+          alt: "linkedin-icon",
+        },
+      ],
     },
   ];
   return (

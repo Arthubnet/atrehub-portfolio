@@ -27,10 +27,9 @@ function ProjectCard({
             <Skill key={index} skill={item.skill} />
           ))}
         </div>
-        <p>{description}</p>
+        <p>{description.map((item) => item)}</p>
         <div className="project__card__links">
-          <Button>
-            {" "}
+          <Button link={link}>
             Open Project
             {/*  <a href={link} target="__blank">
             View Project
@@ -40,18 +39,6 @@ function ProjectCard({
             <img src={gitBtn} alt="github-button" />
           </a>
         </div>
-
-        {/*         <h3 style={{ color: color }}>{title}</h3>
-        <p>{description}</p>
-        <div className="project__card__links">
-          <LinkBtn link={link} />
-          <a className="github-link" href={github} target="_blank">
-            <img src={gitBtn} />
-          </a>
-           <a href={link} target="__blank">
-            <p>Open The Project</p>
-          </a> 
-        </div> */}
       </div>
       <div
         className="project__card__picture"

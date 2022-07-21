@@ -6,7 +6,13 @@ function SuccessPopup({ setIsLoading }) {
     <div className="success-popup">
       <div className="success-popup__window">
         <p>Success! I'll reach out to you withing 24 hours.</p>
-        <button onClick={() => setIsLoading({ popup: false })}>Ok</button>
+        <button
+          onClick={() => {
+            setIsLoading({ popup: false });
+          }}
+        >
+          Ok
+        </button>
       </div>
     </div>
   );

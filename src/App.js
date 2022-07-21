@@ -1,5 +1,5 @@
 import "./App.css";
-import BodyInner from "./Components/Body.component";
+import BodyInner from "./Components/BodyInner.component";
 
 function App() {
   return (
