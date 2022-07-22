@@ -42,8 +42,23 @@ function About() {
       <div className="about__container">
         <img className="about__picture" src={myself}></img>
         <div className="about__title">
-          <h2>Artem Trehub</h2>
-          <h3>React Web Developer</h3>
+          <div className="box-wrapper">
+            <div className="box">
+              <div className="title">
+                <span className="block"></span>
+                <h2>
+                  Artem Trehub<span></span>
+                </h2>
+              </div>
+
+              <div className="role">
+                <div className="block"></div>
+                <h3>React Web Developer</h3>
+              </div>
+            </div>
+          </div>
+          {/* <h2>Artem Trehub</h2>
+          <h3>React Web Developer</h3> */}
           <p>
             My Web path started 12 years ago as Digital Marketing Manager, also
             ran own marketing business based in Ukraine, Kyiv that operated

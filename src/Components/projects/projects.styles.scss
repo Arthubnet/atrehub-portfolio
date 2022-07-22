@@ -1,6 +1,11 @@
 .projects {
   overflow: hidden;
+  margin: 10rem auto;
   @media all and (max-width: 1300px) {
+    margin: 7rem auto;
+    @media all and (max-width: 600px) {
+      margin: 4rem auto;
+    }
     .project__card {
       flex-direction: column;
       &__body {
