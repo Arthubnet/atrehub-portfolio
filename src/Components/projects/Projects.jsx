@@ -40,7 +40,7 @@ class Projects extends Component {
             E-commerce project on React. Well designed Components with Redux
             state management makes the app scalable to any production size.
             Personalised cart, Payment system and Efficient routing provides
-            great <span>UX</span>. Mobile adaptive."
+            great <span>UX</span>. Mobile adaptive.
           </p>,
         ],
         image: fred,
