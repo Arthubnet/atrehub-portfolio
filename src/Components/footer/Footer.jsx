@@ -7,7 +7,10 @@ function Footer() {
     <div className="footer">
       <p>
         © {new Date().getFullYear()} Built and designed by
-        <a href="https://www.linkedin.com/in/artem-trehub/"> Artem Trehub</a>
+        <a href="https://www.linkedin.com/in/artem-trehub/" target="_blank">
+          {" "}
+          Artem Trehub
+        </a>
       </p>
     </div>
   );

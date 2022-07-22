@@ -23,16 +23,15 @@ function ProjectCard({
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div
-      ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateX(-200px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      }}
-      className="project__card"
-    >
-      <div className="project__card__body">
+    <div ref={ref} className="project__card">
+      <div
+        style={{
+          transform: isInView ? "none" : "translateX(-100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 1.4s ease-out 0.2s",
+        }}
+        className="project__card__body"
+      >
         <h4>{tech}</h4>
         <h1>{title}</h1>
         <div className="project__card__skills">
@@ -50,7 +49,12 @@ function ProjectCard({
       </div>
       <div
         className="project__card__picture"
-        style={{ backgroundImage: `url(${gif})` }}
+        style={{
+          backgroundImage: `url(${gif})`,
+          transform: isInView ? "none" : "translateX(-100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 1.4s ease-out 0.3s",
+        }}
       >
         <a href={link} target="_blank">
           <img src={image} alt={title}></img>

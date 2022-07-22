@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import FormInput from "../FormInput.component";
 import Button from "../Button.component";
 import "./contact.styles.scss";
 import { addCollection } from "../../firebase/firebase.utils";
+/* Framer Motion */
+import { useInView } from "framer-motion";
 
 function Contact({ setIsLoading }) {
   let [user, setUser] = useState({ name: "", email: "", message: "" });
   let { name, email, message } = user;
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   let handleChange = (e) => {
     let { name, value } = e.target;
@@ -33,7 +38,15 @@ function Contact({ setIsLoading }) {
   };
   return (
     <section className="contact">
-      <div className="contact__container">
+      <div
+        style={{
+          transform: isInView ? "none" : "translateY(50px)",
+          opacity: isInView ? 1 : 0,
+          scale: isInView ? 0 : 1,
+          transition: "all 1.3s ease-out ",
+        }}
+        className="contact__container"
+      >
         <div className="contact__title">
           <h2>Work with me</h2>
           <p>
@@ -43,7 +56,7 @@ function Contact({ setIsLoading }) {
         </div>
         <div className="contact__form">
           <form onSubmit={handleSubmit}>
-            <div className="first__two">
+            <div ref={ref} className="first__two">
               <FormInput
                 name="name"
                 value={name}
