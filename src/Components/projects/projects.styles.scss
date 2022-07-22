@@ -1,4 +1,5 @@
 .projects {
+  overflow: hidden;
   @media all and (max-width: 1300px) {
     .project__card {
       flex-direction: column;

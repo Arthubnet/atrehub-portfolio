@@ -43,9 +43,7 @@ function About() {
         <img className="about__picture" src={myself}></img>
         <div className="about__title">
           <h2>Artem Trehub</h2>
-          <h3>
-            <span>React</span> Web Developer
-          </h3>
+          <h3>React Web Developer</h3>
           <p>
             My Web path started 12 years ago as Digital Marketing Manager, also
             ran own marketing business based in Ukraine, Kyiv that operated
@@ -53,11 +51,10 @@ function About() {
             psychology in general was always my passion, but working with
             developers woke up a new desire to code. After creating my first
             website I can't stop coding, at the moment primarily create web apps
-            through JS React, but also have experience in developing full stack
-            applications. To learn more, take a look at my latest projects
-            below.
+            through <span>JS React</span>, but also have experience in
+            developing full stack applications. To learn more, take a look at my
+            latest projects below.
           </p>
-
           <div className="about__previews">
             {previews.map(({ title, icons }, index) => (
               <SkillsPreview key={index} title={title} icons={icons} />
