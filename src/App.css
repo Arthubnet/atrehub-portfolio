@@ -2,12 +2,6 @@
   text-align: center;
   background-size: cover;
   background-position: center;
-  width: 100%;
   min-height: 35rem;
   position: relative;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }

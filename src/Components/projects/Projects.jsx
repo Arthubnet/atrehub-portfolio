@@ -10,7 +10,7 @@ import billboard from "../../assets/img/billboard2.jpg";
 import fred from "../../assets/img/fred3.jpg";
 import gallery from "../../assets/img/gallery.jpg";
 
-class Project extends Component {
+class Projects extends Component {
   state = {
     card: [
       {
@@ -109,8 +109,8 @@ class Project extends Component {
   };
   render() {
     return (
-      <div className="project__section">
-        <div className="project__section__container">
+      <section className="projects">
+        <div className="projects__container">
           {/* <h2 className="project-title">Projects</h2> */}
           {this.state.card
             .filter((item, index) => index < 3)
@@ -144,9 +144,9 @@ class Project extends Component {
               )
             )}
         </div>
-      </div>
+      </section>
     );
   }
 }
 
-export default Project;
+export default Projects;

@@ -10,8 +10,9 @@ import jsIcon from "../../assets/img/js.svg.png";
 import reactIcon from "../../assets/img/react.svg";
 import cssIcon from "../../assets/img/sass.svg";
 import myself from "../../assets/img/pic.jpg";
+import Button from "../Button.component";
 
-function AboutPage() {
+function About() {
   let previews = [
     {
       title: "Best Skill On",
@@ -38,11 +39,9 @@ function AboutPage() {
     },
   ];
   return (
-    <div className="body__about">
-      <div className="body__about__picture">
-        <img src={myself}></img>
-      </div>
-      <div className="body__about__title">
+    <section className="about">
+      <div className="about__picture">{/*  <img src={myself}></img> */}</div>
+      <div className="about__title">
         <h2>Artem Trehub</h2>
         <h3>
           <span>React</span> Web Developer
@@ -57,14 +56,15 @@ function AboutPage() {
           also have experience in developing full stack applications. To learn
           more, take a look at my latest projects below.
         </p>
-        <div className="body__about__previews">
+
+        <div className="about__previews">
           {previews.map(({ title, icons }, index) => (
             <SkillsPreview key={index} title={title} icons={icons} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default AboutPage;
+export default About;

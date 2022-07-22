@@ -5,7 +5,7 @@ import "./navbar.styles.scss";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="navbar__picture"></div>
+      {/*  <div className="navbar__picture"></div> */}
     </div>
   );
 }

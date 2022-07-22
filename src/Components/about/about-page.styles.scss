@@ -1,11 +1,10 @@
-.body__about {
-  width: 1200px;
-  padding: 100px 0 0 0;
+.about {
+  padding: 10rem 0 0 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   &__picture {
-    max-width: 30%;
+    width: 30%;
     height: auto;
     border-radius: 10px;
     img {
@@ -15,7 +14,7 @@
     }
   }
   &__title {
-    max-width: 67%;
+    width: 67%;
     h3 {
       font-size: 1.4rem;
       margin: 0;
@@ -28,7 +27,7 @@
       margin-top: 15px;
       text-align: justify;
     }
-    .body__about__previews {
+    .about__previews {
       display: flex;
       justify-content: space-between;
     }
