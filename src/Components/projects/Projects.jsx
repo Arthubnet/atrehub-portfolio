@@ -34,7 +34,7 @@ class Projects extends Component {
       },
       {
         tech: "Full Stack",
-        title: "Fred E-Commerce",
+        title: "E-Commerce",
         description: [
           <p key={2}>
             E-commerce project on React. Well designed Components with Redux

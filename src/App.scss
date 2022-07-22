@@ -33,7 +33,7 @@ h6 {
 }
 
 p {
-  color: #666;
+  color: rgb(52, 56, 66);
   line-height: 1.6em;
   font-weight: 400;
   font-size: 1.1rem;
@@ -41,69 +41,46 @@ p {
 }
 
 section {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
+  @media all and (max-width: 1300px) {
+    width: 85%;
+  }
+  @media all and (max-width: 500px) {
+    width: 95%;
+  }
 }
 
 .App {
   width: 97vw;
   border-radius: 10px;
-  margin: 37vh auto 5vh auto;
+  margin: 27vh auto 5vh auto;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   gap: 15rem;
   color: #343842;
+  @media all and (max-width: 1300px) {
+    gap: 10rem;
+  }
+  @media all and (max-width: 1000px) {
+    gap: 7rem;
+    padding-bottom: 3rem;
+  }
 }
 
-@media all and (max-width: 1300px) {
-  section {
-    width: 85%;
+@media all and (max-width: 500px) {
+  .App {
+    gap: 3rem;
   }
-  .about {
-    &__title {
-      width: 100%;
-      margin: 0 auto;
-    }
-    &__picture {
-      width: 10rem;
-      height: 10rem;
-      border-radius: 50%;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translate(-50%, -50%);
-      font-size: 0;
-      img {
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        z-index: 500;
-      }
-    }
+  h1 {
+    font-size: 3rem;
   }
-  .projects {
-    .project__card {
-      flex-direction: column;
-      &__body {
-        p {
-          p {
-            width: 100%;
-          }
-        }
-        &__links {
-          width: 100%;
-        }
-      }
-      &__picture {
-        width: 70%;
-        height: auto;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 

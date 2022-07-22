@@ -4,14 +4,13 @@ $green: #2e8b57;
   position: relative;
   padding: 1rem 2rem 0.5rem 2.5rem;
   color: #000000;
-  border: 3px solid #776e62;
+  border: 3px solid black;
   -webkit-transition: padding 0.3s ease-in-out;
   transition: padding 0.3s ease-in-out;
   background: transparent;
   font-weight: 500;
   font-size: 1rem;
   font-family: "Poppins";
-
   &:before {
     content: "";
     position: absolute;
@@ -28,13 +27,11 @@ $green: #2e8b57;
   }
   &:hover {
     padding: 0.75rem 2.25rem;
+    cursor: pointer;
   }
   &:hover:before {
     top: 0;
     left: 0;
-  }
-  &:active {
-    transform: scale(0.95);
   }
   /*  display: block;
   font-size: 12px;

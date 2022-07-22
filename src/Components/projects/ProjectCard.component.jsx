@@ -2,7 +2,6 @@ import React from "react";
 import "./project-card.styles.scss";
 
 import gitBtn from "../../../src/assets/img/github2.png";
-import LinkBtn from "../LinkBtn.component";
 import Skill from "../Skill.component";
 import Button from "./../Button.component";
 
