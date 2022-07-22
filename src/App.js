@@ -12,20 +12,20 @@ import SuccessPopup from "./Components/successPopup/SuccessPopup.component";
 function App() {
   const [loading, setIsLoading] = useState({ spinner: false, popup: false });
   let { spinner, popup } = loading;
-  /* 
+
   useEffect(() => {
     popup
       ? (document.body.style.overflowY = "hidden")
       : (document.body.style.overflowY = "visible");
-  }, [popup]); */
+  }, [popup]);
 
   return (
     <div className="App">
       <About />
       <Projects />
       {<Contact setIsLoading={setIsLoading} />}
-      {/* {popup ? <SuccessPopup setIsLoading={setIsLoading} /> : null}
-      {spinner ? <LoadingSpinner /> : null} */}
+      {popup ? <SuccessPopup setIsLoading={setIsLoading} /> : null}
+      {spinner ? <LoadingSpinner /> : null}
       <Navbar />
     </div>
   );

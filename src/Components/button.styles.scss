@@ -3,11 +3,12 @@ $green: #2e8b57;
 .btn {
   position: relative;
   padding: 1rem 2rem 0.5rem 2.5rem;
-  color: #071013;
-  border: 3px solid black;
+  color: #000000;
+  border: 3px solid #776e62;
   -webkit-transition: padding 0.3s ease-in-out;
   transition: padding 0.3s ease-in-out;
   background: transparent;
+  font-weight: 500;
   font-size: 1rem;
   font-family: "Poppins";
 
@@ -27,7 +28,6 @@ $green: #2e8b57;
   }
   &:hover {
     padding: 0.75rem 2.25rem;
-    cursor: pointer;
   }
   &:hover:before {
     top: 0;

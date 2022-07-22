@@ -48,14 +48,12 @@ section {
 .App {
   width: 97vw;
   border-radius: 10px;
-  margin: 25vh auto 5vh auto;
-  background: white;
+  margin: 37vh auto 5vh auto;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   gap: 15rem;
   color: #343842;
-  z-index: 10;
 }
 
 @media all and (max-width: 1300px) {

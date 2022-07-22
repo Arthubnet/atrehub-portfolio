@@ -40,7 +40,9 @@ function About() {
   ];
   return (
     <section className="about">
-      <div className="about__picture">{/*  <img src={myself}></img> */}</div>
+      <div className="about__picture">
+        <img src={myself}></img>
+      </div>
       <div className="about__title">
         <h2>Artem Trehub</h2>
         <h3>

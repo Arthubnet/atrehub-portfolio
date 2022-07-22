@@ -68,7 +68,6 @@ function Contact({ setIsLoading }) {
               type="text"
               label={"Your Message"}
               required={true}
-              size={true}
             />
             <Button form="form">Send Message</Button>
           </form>
