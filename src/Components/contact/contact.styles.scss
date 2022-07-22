@@ -1,5 +1,8 @@
 .contact {
-  padding-bottom: 5%;
+  margin-bottom: 10%;
+  @media all and (max-width: 500px) {
+    margin-bottom: 20%;
+  }
   &__container {
     width: 70%;
     margin: 0 auto;

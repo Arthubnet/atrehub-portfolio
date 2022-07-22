@@ -8,6 +8,7 @@ import Projects from "./Components/projects/Projects";
 import Contact from "./Components/contact/Contact";
 import LoadingSpinner from "./Components/loadingSpinner/LoadingSpinner.component";
 import SuccessPopup from "./Components/successPopup/SuccessPopup.component";
+import Footer from "./Components/footer/Footer";
 
 function App() {
   const [loading, setIsLoading] = useState({ spinner: false, popup: false });
@@ -27,6 +28,7 @@ function App() {
       {popup ? <SuccessPopup setIsLoading={setIsLoading} /> : null}
       {spinner ? <LoadingSpinner /> : null}
       <Navbar />
+      <Footer />
     </div>
   );
 }

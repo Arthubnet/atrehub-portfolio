@@ -1,7 +1,7 @@
-$green: #2e8b57;
+$reach-black: #071013;
 
 h1 {
-  color: #071013;
+  color: $reach-black;
   font-weight: 500;
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
@@ -11,7 +11,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 3rem;
-  color: #071013;
+  color: $reach-black;
   letter-spacing: -0.125px;
   letter-spacing: 0.1rem;
   margin: 0;
@@ -42,7 +42,7 @@ p {
 
 section {
   width: 1250px;
-  margin: 0 auto;
+  margin: 0 auto 15%;
   @media all and (max-width: 1300px) {
     width: 85%;
   }
@@ -58,21 +58,10 @@ section {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  gap: 15rem;
   color: #343842;
-  @media all and (max-width: 1300px) {
-    gap: 10rem;
-  }
-  @media all and (max-width: 1000px) {
-    gap: 7rem;
-    padding-bottom: 3rem;
-  }
 }
 
 @media all and (max-width: 500px) {
-  .App {
-    gap: 3rem;
-  }
   h1 {
     font-size: 3rem;
   }
