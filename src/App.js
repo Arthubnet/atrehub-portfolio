@@ -9,7 +9,6 @@ import Contact from "./Components/contact/Contact";
 import LoadingSpinner from "./Components/loadingSpinner/LoadingSpinner.component";
 import SuccessPopup from "./Components/successPopup/SuccessPopup.component";
 import Footer from "./Components/footer/Footer";
-import Testing from "./Components/about/Testing";
 
 function App() {
   const [loading, setIsLoading] = useState({ spinner: false, popup: false });

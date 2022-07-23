@@ -10,9 +10,6 @@ function Contact({ setIsLoading }) {
   let [user, setUser] = useState({ name: "", email: "", message: "" });
   let { name, email, message } = user;
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   let handleChange = (e) => {
     let { name, value } = e.target;
     setUser({ ...user, [name]: value });
@@ -36,14 +33,18 @@ function Contact({ setIsLoading }) {
       message: "",
     });
   };
+
+  /* Framer */
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="contact">
       <div
         style={{
           transform: isInView ? "none" : "translateY(50px)",
           opacity: isInView ? 1 : 0,
-          scale: isInView ? 0 : 1,
-          transition: "all 1.3s ease-out ",
+          transition: "all 0.9s ease-out ",
         }}
         className="contact__container"
       >
