@@ -67,7 +67,7 @@
                 -moz-border-radius: 50%;
                 border-radius: 50%;
 
-                background: #ffb510;
+                background: rgb(16, 200, 164);
                 -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92)
                   forwards;
                 animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92)
@@ -200,14 +200,6 @@
     p {
       margin-top: 15px;
       text-align: justify;
-      /*    span {
-          background: linear-gradient(
-            180deg,
-            rgba(0, 16, 36, 0) 50%,
-            rgba(200, 239, 246, 1) 50%,
-            rgba(0, 212, 255, 1) 50%
-          );
-        } */
     }
     .about__previews {
       width: 100%;

@@ -1,5 +1,6 @@
 $green: #2e8b57;
 $grass: rgb(102, 185, 92);
+$light: rgb(16, 200, 164);
 
 .btn {
   position: relative;
@@ -20,9 +21,9 @@ $grass: rgb(102, 185, 92);
     z-index: -1;
     height: 100%;
     width: 100%;
-    background-color: $green;
-    border-right: 3px solid $green;
-    border-bottom: 3px solid $green;
+    background-color: $light;
+    border-right: 3px solid $light;
+    border-bottom: 3px solid $light;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
