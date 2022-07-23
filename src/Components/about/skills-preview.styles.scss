@@ -41,10 +41,11 @@
     .large {
       width: 3rem;
       height: 3rem;
-      img {
+      svg {
         width: 100%;
         height: 100%;
         border-radius: 0.35rem;
+        fill: rgb(73, 81, 87);
       }
     }
   }

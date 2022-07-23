@@ -4,11 +4,11 @@ import "./about-page.styles.scss";
 import SkillsPreview from "./SkillsPreview.component";
 
 import { ReactComponent as GitIcon } from "../../assets/img/github.svg";
-import { ReactComponent as LinkedinIcon } from "../../assets/img/linkedin2.svg";
+import { ReactComponent as LinkedinIcon } from "../../assets/img/linkedin.svg";
+import { ReactComponent as ReactIcon } from "../../assets/img/react.svg";
+import { ReactComponent as JsIcon } from "../../assets/img/js.svg";
+import { ReactComponent as CSSIcon } from "../../assets/img/css3.svg";
 
-import jsIcon from "../../assets/img/js.svg.png";
-import reactIcon from "../../assets/img/react.svg";
-import cssIcon from "../../assets/img/sass.svg";
 import myself from "../../assets/img/pic.jpg";
 
 function About() {
@@ -16,9 +16,9 @@ function About() {
     {
       title: "Best Skill On",
       icons: [
-        { icon: reactIcon, alt: "react-icon", size: "large" },
-        { icon: cssIcon, alt: "css-icon", size: "large" },
-        { icon: jsIcon, alt: "javascript-icon", size: "large" },
+        { icon: ReactIcon, alt: "react-icon", size: "large" },
+        { icon: JsIcon, alt: "javascript-icon", size: "large" },
+        { icon: CSSIcon, alt: "css-icon", size: "large" },
       ],
     },
     {
