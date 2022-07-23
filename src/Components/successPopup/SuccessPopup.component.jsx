@@ -5,7 +5,7 @@ function SuccessPopup({ setIsLoading }) {
   return (
     <div className="success-popup">
       <div className="success-popup__window">
-        <p>Success! I'll reach out to you withing 24 hours.</p>
+        <p>Success! I'll reach out to you within 24 hours.</p>
         <button
           onClick={() => {
             setIsLoading({ popup: false });

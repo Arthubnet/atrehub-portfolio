@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "./project-card.styles.scss";
 
 import gitBtn from "../../../src/assets/img/github2.png";
@@ -51,7 +51,7 @@ function ProjectCard({
         className="project__card__picture"
         style={{
           backgroundImage: `url(${gif})`,
-          transform: isInView ? "none" : "translateX(-100px)",
+          transform: isInView ? "" : "translateX(-100px)",
           opacity: isInView ? 1 : 0,
           transition: "all 1.4s ease-out 0.3s",
         }}

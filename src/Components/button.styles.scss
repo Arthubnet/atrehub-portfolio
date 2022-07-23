@@ -2,92 +2,115 @@ $green: #2e8b57;
 $grass: rgb(102, 185, 92);
 $light: #2e8b57;
 
-/* First btn */
-
-/* .btn {
+button.fancy {
+  -webkit-appearance: button;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
   position: relative;
-  padding: 1rem 2rem 0.5rem 2.5rem;
-  color: #000000;
-  border: 3px solid black;
-  -webkit-transition: padding 0.3s ease-in-out;
-  transition: padding 0.3s ease-in-out;
-  background: transparent;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: "Poppins";
-  &:before {
-    content: "";
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  width: 16.8125rem;
+  &.form {
+    margin: 0 auto;
+  }
+
+  &::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
     position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background-color: $light;
-    border-right: 3px solid $light;
-    border-bottom: 3px solid $light;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: background 0.3s linear, width 0.3s linear;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  a {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
   }
+
+  .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: white;
+    -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+
+  .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: white;
+    -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: white;
+    -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+
   &:hover {
-    padding: 0.75rem 2.25rem;
-    cursor: pointer;
+    color: white;
+    background: black;
+
+    &::before {
+      width: 0.9375rem;
+      background: white;
+    }
+
+    a {
+      color: white;
+      padding-left: 1.5em;
+    }
+
+    .top-key {
+      left: -2px;
+      width: 0px;
+    }
+    .bottom-key-1,
+    .bottom-key-2 {
+      right: 0;
+      width: 0;
+    }
   }
-  &:hover:before {
-    top: 0;
-    left: 0;
-  }
-} */
-
-/* Second btn */
-.btn {
-  appearance: button;
-  background-color: $light;
-  background-image: none;
-  border: 1px solid $light;
-  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
-  box-sizing: border-box;
-  color: #000;
-  cursor: pointer;
-  font-family: "Poppins";
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 20px;
-  margin: 0 5px 10px 0;
-  padding: 12px 40px;
-  text-align: center;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-/* .btn:focus {
-  text-decoration: none;
-}
-
-.btn:hover {
-  text-decoration: none;
-} */
-
-.btn:active {
-  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-  outline: 0;
-}
-
-.btn:not([disabled]):active {
-  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-  .btn {
-    padding: 12px 50px;
-  }
-}
-
-.form {
-  margin: 0 auto;
 }

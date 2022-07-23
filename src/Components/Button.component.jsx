@@ -4,15 +4,14 @@ import "./button.styles.scss";
 function Button({ children, form, link }) {
   return (
     <>
-      {form ? (
-        <button role="button" className={`${form ? "form" : ""} btn`}>
-          {children}
-        </button>
-      ) : (
-        <a href={link} target="_blank" className="btn">
+      <button className={`${form ? "form" : ""} fancy`}>
+        <span class="top-key"></span>
+        <a href={link ? link : null} target="_blank">
           {children}
         </a>
-      )}
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
     </>
   );
 }

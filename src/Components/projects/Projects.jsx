@@ -111,7 +111,7 @@ class Projects extends Component {
     return (
       <section className="projects">
         <div className="projects__container">
-          {/*        <h2 className="project-title">Projects</h2> */}
+          {/* <h2 className="project-title">Projects</h2> */}
           {this.state.card
             .filter((item, index) => index < 3)
             .map(

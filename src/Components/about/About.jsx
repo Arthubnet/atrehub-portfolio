@@ -57,8 +57,6 @@ function About() {
               </div>
             </div>
           </div>
-          {/* <h2>Artem Trehub</h2>
-          <h3>React Web Developer</h3> */}
           <p>
             My Web path started 12 years ago as Digital Marketing Manager, also
             ran own marketing business based in Ukraine, Kyiv that operated
