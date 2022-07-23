@@ -14,7 +14,7 @@ class Projects extends Component {
   state = {
     card: [
       {
-        tech: "Frontend",
+        tech: "Front-End",
         title: "Copyboard",
         description: [
           <p key={1}>
