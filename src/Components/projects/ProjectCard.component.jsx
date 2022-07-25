@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./project-card.styles.scss";
 
 import gitBtn from "../../../src/assets/img/github2.png";
@@ -6,7 +6,7 @@ import Skill from "../Skill.component";
 import Button from "./../Button.component";
 
 /* Framer Motion */
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 function ProjectCard({
   tech,
@@ -24,11 +24,14 @@ function ProjectCard({
 
   return (
     <div ref={ref} className="project__card">
-      <div
-        style={{
-          transform: isInView ? "none" : "translateX(-100px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 1.4s ease-out 0.2s",
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+        transition={{
+          type: "tween",
+          ease: "easeOut",
+          duration: 1.9,
+          delay: 0.3,
         }}
         className="project__card__body"
       >
@@ -46,20 +49,33 @@ function ProjectCard({
             <img src={gitBtn} alt="github-button" />
           </a>
         </div>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className="project__card__picture"
         style={{
           backgroundImage: `url(${gif})`,
-          transform: isInView ? "" : "translateX(-100px)",
+        }}
+        initial={{ x: -130, opacity: 0 }}
+        animate={{
+          x: isInView ? 0 : -130,
           opacity: isInView ? 1 : 0,
-          transition: "all 1.4s ease-out 0.3s",
+        }}
+        whileTap={{ scale: 0.95 }}
+        transition={{
+          type: "tween",
+          ease: "easeOut",
+          duration: 1.9,
+          delay: 0.35,
+          scale: {
+            duration: 0.2,
+            delay: 0,
+          },
         }}
       >
         <a href={link} target="_blank">
           <img src={image} alt={title}></img>
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 }

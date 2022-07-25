@@ -89,14 +89,10 @@
     background-repeat: no-repeat;
     background-position: center;
     font-size: 0;
-    transition: 0.3s;
     cursor: pointer;
     border-radius: 8px;
     &:hover img {
       opacity: 0;
-    }
-    &:active {
-      transform: scale(0.95);
     }
     img {
       width: 450px;
