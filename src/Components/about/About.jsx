@@ -21,7 +21,7 @@ function About() {
         { icon: CSSIcon, alt: "css-icon", size: "large" },
       ],
     },
-    {
+    /*     {
       title: "Get In Touch",
       icons: [
         {
@@ -35,12 +35,29 @@ function About() {
           alt: "linkedin-icon",
         },
       ],
-    },
+    }, */
   ];
   return (
     <section className="about">
       <div className="about__container">
-        <img className="about__picture" src={myself}></img>
+        <div className="about__picture">
+          <img src={myself}></img>
+          <ul>
+            <li>
+              <a href="https://github.com/Arthubnet" target="_blank">
+                <GitIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/artem-trehub/ "
+                target="_blank"
+              >
+                <LinkedinIcon />
+              </a>
+            </li>
+          </ul>
+        </div>
         <div className="about__title">
           <div className="box-wrapper">
             <div className="box">
