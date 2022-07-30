@@ -1,4 +1,6 @@
 $green: rgb(39, 105, 85);
+$yellow: rgb(255, 213, 00);
+$blue: rgb(0, 91, 187);
 .hero {
   width: 100%;
   height: 100vh;
@@ -12,6 +14,106 @@ $green: rgb(39, 105, 85);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+  }
+  .box-wrapper {
+    /* align-self: flex-start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (max-width: 599px) {
+      display: none;
+    }
+    .box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      .title {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+
+        .block {
+          width: 0%;
+          height: inherit;
+          background: $yellow;
+          position: absolute;
+          animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          display: flex;
+        }
+
+        h1 {
+          -webkit-animation: mainFadeIn 2s forwards;
+          -o-animation: mainFadeIn 2s forwards;
+          animation: mainFadeIn 2s forwards;
+          animation-delay: 1.6s;
+          opacity: 0;
+          display: flex;
+          align-items: baseline;
+          position: relative;
+
+          span {
+            width: 0px;
+            height: 0px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            background: $blue;
+            -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92)
+              forwards;
+            animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+            animation-delay: 2s;
+            margin-left: 5px;
+            margin-top: -10px;
+            position: absolute;
+            bottom: 13px;
+            right: -12px;
+          }
+        }
+      }
+
+      .role {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        span {
+          color: $blue;
+          font-weight: 600;
+        }
+        .block {
+          width: 0%;
+          height: inherit;
+          background: $blue;
+          position: absolute;
+          animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          animation-delay: 2s;
+          display: flex;
+        }
+
+        h2 {
+          animation: secFadeIn 2s forwards;
+          animation-delay: 3.2s;
+          opacity: 0;
+        }
+      }
+    }
+  }
 
   .navbar {
     width: 100%;
@@ -39,20 +141,15 @@ $green: rgb(39, 105, 85);
   &__title {
     transform: translateY(-50%);
     text-align: center;
+    display: none;
+    @media all and (max-width: 599px) {
+      display: block;
+    }
     span {
       font-weight: 600;
-      color: rgb(0, 91, 187);
+      color: $blue;
     }
-    h1 {
-      font-size: 4rem;
-      font-weight: 800;
-      color: white;
-    }
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: white;
-    }
+
     @media all and (max-width: 600px) {
       transform: translateY(0);
       h1 {
@@ -113,5 +210,89 @@ $green: rgb(39, 105, 85);
   a {
     text-transform: none;
     text-decoration: none;
+  }
+}
+
+/* Keyframes */
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: $yellow;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: $yellow;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: $yellow;
+    border: 0px solid #222;
+    bottom: 13px;
+  }
+}
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

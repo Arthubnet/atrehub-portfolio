@@ -33,6 +33,25 @@ function Hero({ english, setEnglish }) {
           </motion.i>
         </div>
       </div>
+      <div className="box-wrapper">
+        <div className="box">
+          <div className="title">
+            <span className="block"></span>
+            <h1>
+              {english ? "Artem Trehub" : "Артем Трегуб"}
+              <span></span>
+            </h1>
+          </div>
+          <div className="role">
+            <div className="block"></div>
+            <h2>
+              <span>React </span>
+              {english ? "Web Developer" : "Web-Розробник"}
+            </h2>
+          </div>
+        </div>
+      </div>
+      {/* Second title for mobiles */}
       <div className="hero__title">
         <h1>{english ? "Artem Trehub" : "Трегуб Артем"}</h1>
         <h2>
