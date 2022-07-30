@@ -3,9 +3,9 @@ import { Component } from "react";
 import ProjectCard from "./ProjectCard.component";
 import "./projects.styles.scss";
 
-import jsgit from "../../assets/img/js.gif";
-import eCommerce from "../../assets/img/egif.gif";
-import imgGalery from "../../assets/img/ggif.gif";
+import copyboardGif from "../../assets/img/copy180s.gif";
+import fredGif from "../../assets/img/fred.gif";
+import galleryGif from "../../assets/img/gallery.gif";
 import billboard from "../../assets/img/billboard2.jpg";
 import fred from "../../assets/img/fred3.jpg";
 import gallery from "../../assets/img/gallery.jpg";
@@ -29,7 +29,7 @@ class Projects extends Component {
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
         github: "https://github.com/Arthubnet/billboard-redesign",
-        gif: jsgit,
+        gif: copyboardGif,
         skills: [{ skill: "JavaScript" }, { skill: "CSS" }, { skill: "HTML" }],
       },
       {
@@ -47,7 +47,7 @@ class Projects extends Component {
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
         github: "https://github.com/Arthubnet/cloth-e-commerce",
-        gif: eCommerce,
+        gif: fredGif,
         skills: [
           { skill: "React" },
           { skill: "Redux" },
@@ -77,7 +77,7 @@ class Projects extends Component {
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
         github: "https://github.com/Arthubnet/images-gallery-frontend",
-        gif: imgGalery,
+        gif: galleryGif,
         skills: [
           { skill: "React" },
           { skill: "JavaScript" },
@@ -102,7 +102,7 @@ class Projects extends Component {
         color: "#344767",
         link: "",
         github: "",
-        gif: imgGalery,
+        gif: fredGif,
         skills: [{ skill: "HTML" }, { skill: "CSS" }, { skill: "JavaScript" }],
       },
     ],
