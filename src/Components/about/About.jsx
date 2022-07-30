@@ -59,23 +59,11 @@ function About({ english }) {
           </ul>
         </div>
         <div className="about__title">
-          <div className="box-wrapper">
-            <div className="box">
-              <div className="title">
-                <span className="block"></span>
-                <h2>
-                  {english ? "Artem Trehub" : "Артем Трегуб"}
-                  <span></span>
-                </h2>
-              </div>
-              <div className="role">
-                <div className="block"></div>
-                <h3>
-                  {english ? "React Web Developer" : "React Web-Розробник"}
-                </h3>
-              </div>
-            </div>
-          </div>
+          <h2>
+            {english ? "Artem Trehub" : "Артем Трегуб"}
+            <span></span>
+          </h2>
+          <h3>{english ? "React Web Developer" : "React Web-Розробник"}</h3>
           <p>
             {english
               ? `My Web path started 12 years ago as Digital Marketing Manager, also

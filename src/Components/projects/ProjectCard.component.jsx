@@ -65,14 +65,15 @@ function ProjectCard({
           x: isInView ? 0 : -130,
           opacity: isInView ? 1 : 0,
         }}
-        whileTap={{ scale: 0.95 }}
+        whileHover={{ scale: 1.5 }}
+        /* whileTap={{ scale: 0.95 }} */
         transition={{
           type: "tween",
           ease: "easeOut",
           duration: 1.9,
           delay: 0.35,
           scale: {
-            duration: 0.2,
+            duration: 1,
             delay: 0,
           },
         }}
