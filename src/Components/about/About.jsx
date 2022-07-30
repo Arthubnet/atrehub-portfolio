@@ -68,7 +68,6 @@ function About({ english }) {
                   <span></span>
                 </h2>
               </div>
-
               <div className="role">
                 <div className="block"></div>
                 <h3>

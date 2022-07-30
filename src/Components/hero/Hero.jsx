@@ -36,8 +36,8 @@ function Hero({ english, setEnglish }) {
       <div className="hero__title">
         <h1>{english ? "Artem Trehub" : "Трегуб Артем"}</h1>
         <h2>
-          {/* {english ? "React Web Developer" : "React Web-Розробник"} */}
-          <span>React </span>Web Developer
+          <span>React </span>
+          {english ? "Web Developer" : "Web-Розробник"}
         </h2>
       </div>
       <div className="hero__footer">

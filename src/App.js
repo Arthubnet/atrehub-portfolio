@@ -9,6 +9,9 @@ import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 import LoadingSpinner from "./Components/loadingSpinner/LoadingSpinner.component";
 import SuccessPopup from "./Components/successPopup/SuccessPopup.component";
+/* Motion */
+
+import { motion } from "framer-motion";
 
 function App() {
   const [loading, setIsLoading] = useState({ spinner: false, popup: false });
@@ -22,7 +25,12 @@ function App() {
   }, [popup]);
 
   return (
-    <div className="App">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="App"
+    >
       <Hero english={english} setEnglish={setEnglish} />
       <About english={english} />
       <Projects english={english} />
@@ -30,7 +38,7 @@ function App() {
       {popup ? <SuccessPopup setIsLoading={setIsLoading} /> : null}
       {spinner ? <LoadingSpinner /> : null}
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
