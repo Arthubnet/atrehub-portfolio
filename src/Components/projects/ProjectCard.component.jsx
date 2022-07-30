@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./project-card.styles.scss";
 
 import gitBtn from "../../../src/assets/img/github2.png";
@@ -8,16 +8,19 @@ import Button from "./../Button.component";
 /* Framer Motion */
 import { motion, useInView } from "framer-motion";
 
+import parse from "html-react-parser";
+
 function ProjectCard({
   tech,
   title,
-  description,
   image,
-  color,
   link,
   github,
   gif,
   skills,
+  english,
+  us,
+  ua,
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -42,9 +45,11 @@ function ProjectCard({
             <Skill key={index} skill={item.skill} />
           ))}
         </div>
-        <p>{description.map((item) => item)}</p>
+        <p>{parse(`${english ? us : ua}`)}</p>
         <div className="project__card__links">
-          <Button link={link}>Open Project</Button>
+          <Button link={link}>
+            {english ? "Open Project" : "Відкрити проект"}
+          </Button>
           <a ref={ref} className="github-link" href={github} target="_blank">
             <img src={gitBtn} alt="github-button" />
           </a>

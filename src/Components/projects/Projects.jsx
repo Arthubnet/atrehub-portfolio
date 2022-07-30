@@ -16,15 +16,15 @@ class Projects extends Component {
       {
         tech: "Front-End",
         title: "Copyboard",
-        description: [
-          <p key={1}>
-            Redesign of Billboard website, with my own{" "}
-            <span>JavaScript music player</span> that provides all the needed
-            functionality to listen to music while reading news and serfing the
-            website. The project was made only for the portfolio so news are not
-            filled with actual data. Mobile responsive.
-          </p>,
-        ],
+        us: `<p key={1}>
+                  Redesign of Billboard website, with my own
+                  <span>JavaScript music player</span> that provides all the
+                  needed functionality to listen to music while reading news and
+                  serfing the website. The project was made only for the
+                  portfolio so news are not filled with actual data. Mobile
+                  responsive.
+                </p>`,
+        ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>JavaScript музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
         image: billboard,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
@@ -35,14 +35,14 @@ class Projects extends Component {
       {
         tech: "Full Stack",
         title: "E-Commerce",
-        description: [
+        us: `
           <p key={2}>
             E-commerce project on React. Well designed Components with Redux
             state management makes the app scalable to any production size.
             Personalised cart, Payment system and Efficient routing provides
             great <span>UX</span>. Mobile adaptive.
-          </p>,
-        ],
+          </p>,`,
+        ua: `<p key={2}>Редизайн вебсайта Billboard, з моїм авторським <span>JavaScript музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. електронна комерція</p>`,
         image: fred,
         color: "#f44336",
         link: "https://fred-ecommerce-project.herokuapp.com/",
@@ -63,16 +63,16 @@ class Projects extends Component {
       {
         tech: "MERN Stack",
         title: "Images Gallery",
-        description: [
-          <p key={3}>
-            MERN Stack app that retrieves random images from Unsplash API based
+        us: `<p key={3}>
+            MERN stack app that retrieves random images from Unsplash API based
             on search input and provides the feature to save/delete specific
-            image to/from our MongoDB database. The app fetches DB through our{" "}
+            image to/from our MongoDB database. The app fetches DB through our
             <span>REST API</span> on load and returns saved pictures if any
             exists. There is same version with Python backend and Docker
-            containers on GitHub.
-          </p>,
-        ],
+            containers on <a href="https://github.com/Arthubnet/images-gallery-python" target="_blank">GitHub</a>.
+          </p>`,
+
+        ua: `<p key={3}>MERN stack програма котра повертає випадкові фото з Unspash API в залежності від запиту та надає можливість зберігати/видаляти конкретні фото в/з MongoDB базу данних. Після завантаження програма автоматично кидає запит до бази даних через наш <span>REST API</span> та повертає збережені фото якщо такі існують. У моєму <a href="https://github.com/Arthubnet/images-gallery-python" target="_blank">GitHub</a> існує близька копія програми але написана нa Python та з використанням Docker контейнерів.</p>`,
         image: gallery,
         color: "#4caf50",
         link: "https://images-gallery-frontend.herokuapp.com/",
@@ -96,8 +96,8 @@ class Projects extends Component {
       {
         tech: "MERN Stack",
         title: "Coming soon",
-        description:
-          "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
+        us: "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
+        ua: `<p key={1}>E-commerce проект на React. Грамотно сформовані Компоненти за допомогою Redux state management надають можливість використовувати данний проект на будь язих масштабах. Персоналізований візок, Платіжна система та Еффективний роутінг роблять сайт логічним для використання користувачу.   </p>`,
         image: "",
         color: "#344767",
         link: "",
@@ -108,6 +108,7 @@ class Projects extends Component {
     ],
   };
   render() {
+    const { english } = this.props;
     return (
       <section className="projects">
         <div className="projects__container">
@@ -126,10 +127,13 @@ class Projects extends Component {
                   gif,
                   tech,
                   skills,
+                  ua,
+                  us,
                 },
                 index
               ) => (
                 <ProjectCard
+                  english={english}
                   key={index}
                   title={title}
                   description={description}
@@ -140,6 +144,8 @@ class Projects extends Component {
                   gif={gif}
                   tech={tech}
                   skills={skills}
+                  ua={ua}
+                  us={us}
                 />
               )
             )}

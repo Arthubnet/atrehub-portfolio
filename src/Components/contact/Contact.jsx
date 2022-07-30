@@ -6,7 +6,7 @@ import { addCollection } from "../../firebase/firebase.utils";
 /* Framer Motion */
 import { useInView } from "framer-motion";
 
-function Contact({ setIsLoading }) {
+function Contact({ setIsLoading, english }) {
   let [user, setUser] = useState({ name: "", email: "", message: "" });
   let { name, email, message } = user;
 
@@ -49,10 +49,11 @@ function Contact({ setIsLoading }) {
         className="contact__container"
       >
         <div className="contact__title">
-          <h2>Work with me</h2>
+          <h2>{english ? "Work with me" : "Давайте поспілкуємось"}</h2>
           <p>
-            Always available for freelancing if the right project comes along.
-            Feel free to contact me.
+            {english
+              ? "Always available for freelancing if the right project comes along. Feel free to contact me."
+              : "Завжди відкритий до фрілансу та нових проектів. Напишіть мені якщо з'явились  питання. "}
           </p>
         </div>
         <div className="contact__form">
@@ -63,7 +64,8 @@ function Contact({ setIsLoading }) {
                 value={name}
                 onChange={handleChange}
                 type="text"
-                label={"Your Name"}
+                labelUs={"Your Name"}
+                labelUa={"Ваше ім'я"}
                 required={true}
               />
               <FormInput
@@ -71,7 +73,8 @@ function Contact({ setIsLoading }) {
                 value={email}
                 onChange={handleChange}
                 type="email"
-                label={"Your Email"}
+                labelUs={"Your Email"}
+                labelUa={"Ваш Email"}
                 required={true}
               />
             </div>
@@ -80,10 +83,13 @@ function Contact({ setIsLoading }) {
               value={message}
               onChange={handleChange}
               type="text"
-              label={"Your Message"}
+              labelUs={"Your Message"}
+              labelUa={"Ваше повідомлення"}
               required={true}
             />
-            <Button form="form">Send Message</Button>
+            <Button form="form">
+              {english ? "Send Message" : "Відправити повідомлення"}
+            </Button>
           </form>
         </div>
       </div>
