@@ -91,7 +91,7 @@ function About({ english }) {
           className="about__title"
         >
           <h2>
-            {english ? "Artem Trehub" : "Артем Трегуб"}
+            {english ? "Artem Trehub" : "Трегуб Артем"}
             <span></span>
           </h2>
           <h3>{english ? "React Web Developer" : "React Web-Розробник"}</h3>

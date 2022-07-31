@@ -38,7 +38,7 @@ function Hero({ english, setEnglish }) {
           <div className="title">
             <span className="block"></span>
             <h1>
-              {english ? "Artem Trehub" : "Артем Трегуб"}
+              {english ? "Artem Trehub" : "Трегуб Артем"}
               <span></span>
             </h1>
           </div>
