@@ -40,8 +40,7 @@ class Projects extends Component {
             E-commerce project on React. Well designed Components with Redux
             state management makes the app scalable to any production size.
             Personalised cart, Payment system and Efficient routing provides
-            great <span>UX</span>. Mobile adaptive.
-          </p>,`,
+            great <span>UX</span>. Mobile adaptive.</p>`,
         ua: `<p key={2}>Редизайн вебсайта Billboard, з моїм авторським <span>JavaScript музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. електронна комерція</p>`,
         image: fred,
         color: "#f44336",
@@ -97,7 +96,7 @@ class Projects extends Component {
         tech: "MERN Stack",
         title: "Coming soon",
         us: "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
-        ua: `<p key={1}>E-commerce проект на React. Грамотно сформовані Компоненти за допомогою Redux state management надають можливість використовувати данний проект на будь язих масштабах. Персоналізований візок, Платіжна система та Еффективний роутінг роблять сайт логічним для використання користувачу.   </p>`,
+        ua: `<p key={1}>E-commerce проект на React. Грамотно сформовані Компоненти за допомогою Redux state management надають можливість використовувати данний проект на будь язих масштабах. Персоналізований візок, Платіжна система та Еффективний роутінг роблять сайт логічним для використання користувачу.</p>`,
         image: "",
         color: "#344767",
         link: "",
@@ -111,7 +110,7 @@ class Projects extends Component {
     const { english } = this.props;
     return (
       <section className="projects">
-        <div className="projects__container">
+        <div className="container">
           {/*  <h2 className="project-title">Projects</h2> */}
           {this.state.card
             .filter((item, index) => index < 3)

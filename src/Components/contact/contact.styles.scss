@@ -1,10 +1,6 @@
 .contact {
-  width: 100%;
-  margin: 0 auto;
-
   &__container {
     width: 50%;
-    padding: 6rem 0;
     margin: 0 auto;
     @media all and (max-width: 1300px) {
       width: 70%;
@@ -13,6 +9,7 @@
       margin: 0 0 50px 0;
       h2 {
         text-align: center;
+        color: black;
       }
       p {
         width: 75%;

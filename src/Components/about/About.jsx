@@ -39,7 +39,7 @@ function About({ english }) {
   ];
   return (
     <section id="about" className="about">
-      <div className="about__container">
+      <div className="container">
         <div className="about__picture">
           <img src={myself}></img>
           <ul>

@@ -39,13 +39,13 @@ function ProjectCard({
         className="project__card__body"
       >
         <h4>{tech}</h4>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <div className="project__card__skills">
           {skills.map((item, index) => (
             <Skill key={index} skill={item.skill} />
           ))}
         </div>
-        <p>{parse(`${english ? us : ua}`)}</p>
+        {parse(`${english ? us : ua}`)}
         <div className="project__card__links">
           <Button link={link}>
             {english ? "Open Project" : "Відкрити проект"}
@@ -65,7 +65,7 @@ function ProjectCard({
           x: isInView ? 0 : -130,
           opacity: isInView ? 1 : 0,
         }}
-        whileHover={{ scale: 1.5 }}
+        whileHover={{ scale: 1.1 }}
         /* whileTap={{ scale: 0.95 }} */
         transition={{
           type: "tween",
