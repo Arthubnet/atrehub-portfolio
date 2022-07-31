@@ -26,7 +26,7 @@ function ProjectCard({
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref} className="project__card">
+    <div className="project__card">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
@@ -40,7 +40,7 @@ function ProjectCard({
       >
         <h4>{tech}</h4>
         <h2>{title}</h2>
-        <div className="project__card__skills">
+        <div ref={ref} className="project__card__skills">
           {skills.map((item, index) => (
             <Skill key={index} skill={item.skill} />
           ))}
@@ -50,7 +50,7 @@ function ProjectCard({
           <Button link={link}>
             {english ? "Open Project" : "Відкрити проект"}
           </Button>
-          <a ref={ref} className="github-link" href={github} target="_blank">
+          <a className="github-link" href={github} target="_blank">
             <img src={gitBtn} alt="github-button" />
           </a>
         </div>

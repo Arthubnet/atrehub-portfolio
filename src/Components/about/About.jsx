@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./about-page.styles.scss";
 
 import SkillsPreview from "./SkillsPreview.component";
@@ -11,6 +11,8 @@ import { ReactComponent as CSSIcon } from "../../assets/img/css3.svg";
 
 import myself from "../../assets/img/pic.jpg";
 
+import { motion, useInView } from "framer-motion";
+
 function About({ english }) {
   let previews = [
     {
@@ -21,6 +23,7 @@ function About({ english }) {
         { icon: CSSIcon, alt: "css-icon", size: "large" },
       ],
     },
+
     /*     {
       title: "Get In Touch",
       icons: [
@@ -37,10 +40,28 @@ function About({ english }) {
       ],
     }, */
   ];
+
+  /* Motion */
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section id="about" className="about">
       <div className="container">
-        <div className="about__picture">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{
+            x: isInView ? 0 : -100,
+            opacity: isInView ? 1 : 0,
+          }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 1.9,
+            delay: 0.35,
+          }}
+          className="about__picture"
+        >
           <img src={myself}></img>
           <ul>
             <li>
@@ -57,14 +78,24 @@ function About({ english }) {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="about__title">
+        </motion.div>
+        <motion.div
+          initial={{ x: -130, opacity: 0 }}
+          animate={{ x: isInView ? 0 : -130, opacity: isInView ? 1 : 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 1.9,
+            delay: 0,
+          }}
+          className="about__title"
+        >
           <h2>
             {english ? "Artem Trehub" : "Артем Трегуб"}
             <span></span>
           </h2>
           <h3>{english ? "React Web Developer" : "React Web-Розробник"}</h3>
-          <p>
+          <p ref={ref}>
             {english
               ? `My Web path started 12 years ago as Digital Marketing Manager, also
             ran own marketing business based in Ukraine, Kyiv that operated
@@ -82,7 +113,7 @@ function About({ english }) {
               <SkillsPreview key={index} title={title} icons={icons} />
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
