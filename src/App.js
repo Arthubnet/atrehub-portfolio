@@ -28,7 +28,7 @@ function App() {
   let [english, setEnglish] = useState(true);
 
   useEffect(() => {
-    setPageAnimation((pageAnimation = true));
+    setPageAnimation(true);
   }, []);
 
   useEffect(() => {
@@ -44,13 +44,10 @@ function App() {
 
   return (
     <motion.div data-theme={theme} className="App">
-      <Hero english={english} setEnglish={setEnglish} />
+      <Hero english={english} />
       <StylesOptions
         setEnglish={setEnglish}
-        english={english}
-        theme={theme}
         setTheme={setTheme}
-        pageAnimation={pageAnimation}
         setPageAnimation={setPageAnimation}
       />
       <About english={english} />
@@ -59,10 +56,7 @@ function App() {
       {popup ? <SuccessPopup setIsLoading={setIsLoading} /> : null}
       {spinner ? <LoadingSpinner /> : null}
       {pageAnimation ? (
-        <OpenPageAnimation
-          pageAnimation={pageAnimation}
-          setPageAnimation={setPageAnimation}
-        />
+        <OpenPageAnimation setPageAnimation={setPageAnimation} />
       ) : null}
       <Footer />
     </motion.div>

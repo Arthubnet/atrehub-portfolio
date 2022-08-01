@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 /* Disble Scroll */
 import disableScroll from "disable-scroll";
 
-function OpenPageAnimation({ setPageAnimation, pageAnimation }) {
+function OpenPageAnimation({ setPageAnimation }) {
   let onLoad = () => {
     disableScroll.on();
     setTimeout(() => {
-      setPageAnimation((pageAnimation = false));
+      setPageAnimation(false);
       disableScroll.off();
     }, 2500);
   };

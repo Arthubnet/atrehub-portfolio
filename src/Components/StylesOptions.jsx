@@ -12,18 +12,11 @@ import uaSvg from "../assets/img/ukraine-heart.png";
 /* motion */
 import { motion } from "framer-motion";
 
-function StylesOptions({
-  setEnglish,
-  english,
-  theme,
-  setTheme,
-  pageAnimation,
-  setPageAnimation,
-}) {
+function StylesOptions({ setEnglish, setTheme, setPageAnimation }) {
   const [optionsActive, setOptionsActive] = useState(false);
   const raloadAnimation = (type) => {
-    setTheme((theme = type));
-    setPageAnimation((pageAnimation = true));
+    setTheme(type);
+    setPageAnimation(true);
   };
 
   return (
@@ -54,8 +47,7 @@ function StylesOptions({
         <div className="styles-container-choises">
           <div
             onClick={() => {
-              setPageAnimation((pageAnimation = true)),
-                setEnglish((english = true));
+              setPageAnimation(true), setEnglish(true);
             }}
             className="usa"
           >
@@ -64,8 +56,7 @@ function StylesOptions({
           </div>
           <div
             onClick={() => {
-              setPageAnimation((pageAnimation = true)),
-                setEnglish((english = false));
+              setPageAnimation(true), setEnglish(false);
             }}
             className="ua"
           >
