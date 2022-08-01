@@ -14,9 +14,13 @@ import { motion } from "framer-motion";
 
 function StylesOptions({ setEnglish, setTheme, setPageAnimation }) {
   const [optionsActive, setOptionsActive] = useState(false);
-  const raloadAnimation = (type) => {
+  const themeAnimation = (type) => {
     setTheme(type);
     setPageAnimation(true);
+  };
+
+  const languageAnimation = (bool) => {
+    setPageAnimation(true), setEnglish(bool);
   };
 
   return (
@@ -32,11 +36,11 @@ function StylesOptions({ setEnglish, setTheme, setPageAnimation }) {
       <div className="styles-container">
         <h5>Theme Style</h5>
         <div className="styles-container-choises">
-          <div onClick={() => raloadAnimation("dark")} className="moon">
+          <div onClick={() => themeAnimation("dark")} className="moon">
             <img src={moonSvg} alt="moon" />
             <p className="dark">Dark</p>
           </div>
-          <div onClick={() => raloadAnimation("light")} className="sun">
+          <div onClick={() => themeAnimation("light")} className="sun">
             <img src={sunSvg} alt="sun" />
             <p>Light</p>
           </div>
@@ -45,21 +49,11 @@ function StylesOptions({ setEnglish, setTheme, setPageAnimation }) {
       <div className="styles-container">
         <h5>Languages</h5>
         <div className="styles-container-choises">
-          <div
-            onClick={() => {
-              setPageAnimation(true), setEnglish(true);
-            }}
-            className="usa"
-          >
+          <div onClick={() => languageAnimation(true)} className="usa">
             <img src={usaSvg} alt="usa" />
             <p>USA</p>
           </div>
-          <div
-            onClick={() => {
-              setPageAnimation(true), setEnglish(false);
-            }}
-            className="ua"
-          >
+          <div onClick={() => languageAnimation(false)} className="ua">
             <img src={uaSvg} alt="ua" />
             <p>UA</p>
           </div>
