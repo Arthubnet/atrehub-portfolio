@@ -12,8 +12,19 @@ import uaSvg from "../assets/img/ukraine-heart.png";
 /* motion */
 import { motion } from "framer-motion";
 
-function StylesOptions({ setEnglish, english, theme, setTheme }) {
+function StylesOptions({
+  setEnglish,
+  english,
+  theme,
+  setTheme,
+  pageAnimation,
+  setPageAnimation,
+}) {
   const [optionsActive, setOptionsActive] = useState(false);
+  const raloadAnimation = (type) => {
+    setTheme((theme = type));
+    setPageAnimation((pageAnimation = true));
+  };
 
   return (
     <motion.div
@@ -28,11 +39,11 @@ function StylesOptions({ setEnglish, english, theme, setTheme }) {
       <div className="styles-container">
         <h5>Theme Style</h5>
         <div className="styles-container-choises">
-          <div onClick={() => setTheme((theme = "dark"))} className="moon">
+          <div onClick={() => raloadAnimation("dark")} className="moon">
             <img src={moonSvg} alt="moon" />
             <p className="dark">Dark</p>
           </div>
-          <div onClick={() => setTheme((theme = "light"))} className="sun">
+          <div onClick={() => raloadAnimation("light")} className="sun">
             <img src={sunSvg} alt="sun" />
             <p>Light</p>
           </div>
@@ -41,11 +52,23 @@ function StylesOptions({ setEnglish, english, theme, setTheme }) {
       <div className="styles-container">
         <h5>Languages</h5>
         <div className="styles-container-choises">
-          <div onClick={() => setEnglish((english = true))} className="usa">
+          <div
+            onClick={() => {
+              setPageAnimation((pageAnimation = true)),
+                setEnglish((english = true));
+            }}
+            className="usa"
+          >
             <img src={usaSvg} alt="usa" />
             <p>USA</p>
           </div>
-          <div onClick={() => setEnglish((english = false))} className="ua">
+          <div
+            onClick={() => {
+              setPageAnimation((pageAnimation = true)),
+                setEnglish((english = false));
+            }}
+            className="ua"
+          >
             <img src={uaSvg} alt="ua" />
             <p>UA</p>
           </div>

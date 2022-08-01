@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "disable-scroll": "^0.6.0",
     "firebase": "^9.8.4",
     "framer-motion": "^6.5.1",
     "heroku": "^7.60.2",

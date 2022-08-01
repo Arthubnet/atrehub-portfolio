@@ -10,6 +10,7 @@ import Footer from "./Components/footer/Footer";
 import LoadingSpinner from "./Components/loadingSpinner/LoadingSpinner.component";
 import SuccessPopup from "./Components/successPopup/SuccessPopup.component";
 import StylesOptions from "./Components/StylesOptions";
+import OpenPageAnimation from "./Components/OpenPageAnimation";
 
 /* Local Storage */
 import useLocalStorage from "use-local-storage";
@@ -18,9 +19,17 @@ import useLocalStorage from "use-local-storage";
 import { motion } from "framer-motion";
 
 function App() {
-  const [loading, setIsLoading] = useState({ spinner: false, popup: false });
+  let [loading, setIsLoading] = useState({
+    spinner: false,
+    popup: false,
+  });
   let { spinner, popup } = loading;
+  let [pageAnimation, setPageAnimation] = useState(false);
   let [english, setEnglish] = useState(true);
+
+  useEffect(() => {
+    setPageAnimation((pageAnimation = true));
+  }, []);
 
   useEffect(() => {
     popup
@@ -34,25 +43,27 @@ function App() {
   const [theme, setTheme] = useLocalStorage('theme', defaultDark? 'light' : 'dark' )
 
   return (
-    <motion.div
-      data-theme={theme}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="App"
-    >
+    <motion.div data-theme={theme} className="App">
       <Hero english={english} setEnglish={setEnglish} />
       <StylesOptions
         setEnglish={setEnglish}
         english={english}
         theme={theme}
         setTheme={setTheme}
+        pageAnimation={pageAnimation}
+        setPageAnimation={setPageAnimation}
       />
       <About english={english} />
       <Projects english={english} />
       {<Contact english={english} setIsLoading={setIsLoading} />}
       {popup ? <SuccessPopup setIsLoading={setIsLoading} /> : null}
       {spinner ? <LoadingSpinner /> : null}
+      {pageAnimation ? (
+        <OpenPageAnimation
+          pageAnimation={pageAnimation}
+          setPageAnimation={setPageAnimation}
+        />
+      ) : null}
       <Footer />
     </motion.div>
   );
