@@ -20,7 +20,8 @@ function StylesOptions({ setEnglish, setTheme, setPageAnimation }) {
   };
 
   const languageAnimation = (bool) => {
-    setPageAnimation(true), setEnglish(bool);
+    setPageAnimation(true);
+    setEnglish(bool);
   };
 
   return (
