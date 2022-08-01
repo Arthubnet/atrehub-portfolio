@@ -12,7 +12,7 @@ import uaSvg from "../assets/img/ukraine-heart.png";
 /* motion */
 import { motion } from "framer-motion";
 
-function StylesOptions({ setEnglish, english }) {
+function StylesOptions({ setEnglish, english, theme, setTheme }) {
   const [optionsActive, setOptionsActive] = useState(false);
 
   return (
@@ -29,11 +29,19 @@ function StylesOptions({ setEnglish, english }) {
         <h5>Theme Style</h5>
         <div className="styles-container-choises">
           <div className="moon">
-            <img src={moonSvg} alt="moon" />
+            <img
+              onClick={() => setTheme((theme = "dark"))}
+              src={moonSvg}
+              alt="moon"
+            />
             <p>Dark</p>
           </div>
           <div className="sun">
-            <img src={sunSvg} alt="sun" />
+            <img
+              onClick={() => setTheme((theme = "light"))}
+              src={sunSvg}
+              alt="sun"
+            />
             <p>Light</p>
           </div>
         </div>

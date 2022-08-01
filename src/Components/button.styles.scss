@@ -6,8 +6,7 @@ $brown-black: #1d1d1d;
 button.fancy {
   -webkit-appearance: button;
   background-color: transparent;
-  border: 2px solid #000;
-  border: 2px solid white;
+  border: 2px solid var(--h1);
   border-radius: 0;
   box-sizing: border-box;
   cursor: pointer;
@@ -34,8 +33,7 @@ button.fancy {
     content: " ";
     width: 1.5625rem;
     height: 2px;
-    background: $brown-black;
-    background: white;
+    background: var(--h1);
     top: 50%;
     left: 1.5em;
     position: absolute;
@@ -56,8 +54,7 @@ button.fancy {
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
-    color: white;
+    color: var(--h1);
   }
 
   .top-key {
@@ -66,8 +63,7 @@ button.fancy {
     top: -2px;
     left: 0.625rem;
     position: absolute;
-    background: white;
-    background: $brown-black;
+    background: var(--section);
     -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
     transition: width 0.5s ease-out, left 0.3s ease-out;
   }
@@ -78,8 +74,7 @@ button.fancy {
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: white;
-    background: $brown-black;
+    background: var(--section);
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
@@ -89,25 +84,22 @@ button.fancy {
     right: 0.625rem;
     bottom: -2px;
     position: absolute;
-    background: white;
-    background: $brown-black;
+    background: var(--section);
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
 
   &:hover {
     background: black;
-    background: white;
+    background: var(--h1);
 
     &::before {
       width: 0.9375rem;
-      background: white;
-      background: black;
+      background: var(--section);
     }
 
     a {
-      color: white;
-      color: black;
+      color: var(--section);
       padding-left: 1.5em;
     }
 

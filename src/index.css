@@ -14,21 +14,31 @@ body {
 }
 
 :root {
-  --background: white;
-  --project-section-background: rgb(249, 250, 251);
-  --h1: #071013;
-  --h2: #071013;
-  --h3: white;
-  --projects-title: rgb(37, 202, 127);
-  --p: rgb(52, 56, 66);
-}
-
-[data-theme="dark"] {
-  --background: #1d1d1d;
+  --section: #1d1d1d;
   --project-section-background: black;
   --h1: white;
   --h2: white;
   --h3: #757c81;
   --projects-title: rgb(37, 202, 127);
-  --p: white;
+  --project-card-background: #1d1d1d;
+  --highlight-text: rgb(37, 202, 127);
+  --p: #fff;
+  --skill-background: rgba(255, 255, 255, 0.1);
+  --main-skills-fill: rgb(37, 202, 127);
+  --git-animation-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
+  --section: white;
+  --project-section-background: rgb(249, 250, 251);
+  --h1: #071013;
+  --h2: #071013;
+  --h3: #757c81;
+  --projects-title: #071013;
+  --project-card-background: #fff;
+  --highlight-text: #fffae0;
+  --p: rgb(52, 56, 66);
+  --skill-background: rgba(0, 0, 0, 0.05);
+  --main-skills-fill: rgb(73, 81, 87);
+  --git-animation-border: rgba(0, 0, 0, 0.1);
 }

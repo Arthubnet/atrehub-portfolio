@@ -1,6 +1,6 @@
 .projects {
   background: rgb(249, 250, 251);
-  background: black;
+  background: var(--project-section-background);
   .container {
     display: flex;
     flex-direction: column;

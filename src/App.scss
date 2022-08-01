@@ -4,7 +4,7 @@ $white: #fff;
 
 h1 {
   color: $reach-black;
-  color: white;
+  color: var(--h1);
   font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
@@ -15,7 +15,7 @@ h2 {
   font-weight: bold;
   font-size: 3rem;
   color: $reach-black;
-  color: white;
+  color: var(--h1);
   letter-spacing: -0.125px;
   letter-spacing: 0.1rem;
   margin: 0;
@@ -23,7 +23,7 @@ h2 {
 
 h3 {
   color: white;
-  color: #757c81;
+  color: var(--h3);
   font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: 1px;
@@ -39,7 +39,7 @@ h4 {
 h5 {
   padding: 0.35rem 0.7rem;
   color: black;
-  color: white;
+  color: var(--h1);
   font-weight: normal;
   font-size: 0.8rem;
   margin: 0;
@@ -54,7 +54,7 @@ h6 {
 
 p {
   color: rgb(52, 56, 66);
-  color: white;
+  color: var(--p);
   line-height: 1.6em;
   font-weight: 400;
   font-size: 1rem;
@@ -62,7 +62,7 @@ p {
 }
 
 section {
-  background: #1d1d1d;
+  background: var(--section);
   padding: 100px 0;
   @media all and (max-width: 1000px) {
     padding: 50px 0;
