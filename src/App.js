@@ -9,8 +9,13 @@ import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 import LoadingSpinner from "./Components/loadingSpinner/LoadingSpinner.component";
 import SuccessPopup from "./Components/successPopup/SuccessPopup.component";
-/* Motion */
+import StylesOptions from "./Components/StylesOptions";
 
+/* Local Storage */
+
+import useLocalStorage from "use-local-storage";
+
+/* Motion */
 import { motion } from "framer-motion";
 
 function App() {
@@ -24,6 +29,11 @@ function App() {
       : (document.body.style.overflowY = "visible");
   }, [popup]);
 
+  /* website's color theme */
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark").matches;
+  // prettier-ignore
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark? 'dark' : 'light' )
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,6 +42,7 @@ function App() {
       className="App"
     >
       <Hero english={english} setEnglish={setEnglish} />
+      <StylesOptions setEnglish={setEnglish} english={english} />
       <About english={english} />
       <Projects english={english} />
       {<Contact english={english} setIsLoading={setIsLoading} />}

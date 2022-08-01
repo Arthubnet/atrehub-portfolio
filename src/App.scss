@@ -1,7 +1,10 @@
 $reach-black: #071013;
+$brown-black: #1d1d1d;
+$white: #fff;
 
 h1 {
   color: $reach-black;
+  color: white;
   font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
@@ -12,12 +15,14 @@ h2 {
   font-weight: bold;
   font-size: 3rem;
   color: $reach-black;
+  color: white;
   letter-spacing: -0.125px;
   letter-spacing: 0.1rem;
   margin: 0;
 }
 
 h3 {
+  color: white;
   color: #757c81;
   font-weight: 600;
   font-size: 1.4rem;
@@ -30,6 +35,15 @@ h4 {
   font-weight: 300;
   text-transform: uppercase;
 }
+
+h5 {
+  padding: 0.35rem 0.7rem;
+  color: black;
+  color: white;
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin: 0;
+}
 h6 {
   font-size: 0.75rem;
   font-weight: 600;
@@ -40,13 +54,15 @@ h6 {
 
 p {
   color: rgb(52, 56, 66);
+  color: white;
   line-height: 1.6em;
   font-weight: 400;
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin: 20px 0;
 }
 
 section {
+  background: #1d1d1d;
   padding: 100px 0;
   @media all and (max-width: 1000px) {
     padding: 50px 0;

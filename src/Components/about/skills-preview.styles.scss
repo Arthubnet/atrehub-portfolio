@@ -1,3 +1,5 @@
+$green: rgb(37, 202, 127);
+
 .skills-preview {
   text-align: left;
   &__icons {
@@ -46,6 +48,7 @@
         height: 100%;
         border-radius: 0.35rem;
         fill: rgb(73, 81, 87);
+        fill: $green;
       }
     }
   }

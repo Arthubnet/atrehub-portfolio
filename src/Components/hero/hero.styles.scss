@@ -127,7 +127,7 @@ $blue: rgb(0, 91, 187);
         align-self: flex-start;
       }
     }
-    .languages {
+    /*     .languages {
       display: flex;
       gap: 1rem;
       cursor: pointer;
@@ -136,7 +136,7 @@ $blue: rgb(0, 91, 187);
         font-style: normal;
         font-weight: 500;
       }
-    }
+    } */
   }
   &__title {
     transform: translateY(-50%);

@@ -2,12 +2,13 @@ import React, { useRef } from "react";
 import "./project-card.styles.scss";
 
 import gitBtn from "../../../src/assets/img/github2.png";
+import { ReactComponent as GitSvg } from "../../../src/assets/img/github.svg";
 import Skill from "../Skill.component";
 import Button from "./../Button.component";
 
 /* Framer Motion */
 import { motion, useInView } from "framer-motion";
-
+/* html parse */
 import parse from "html-react-parser";
 
 function ProjectCard({
@@ -51,7 +52,7 @@ function ProjectCard({
             {english ? "Open Project" : "Відкрити проект"}
           </Button>
           <a className="github-link" href={github} target="_blank">
-            <img src={gitBtn} alt="github-button" />
+            <GitSvg />
           </a>
         </div>
       </motion.div>

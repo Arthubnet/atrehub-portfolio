@@ -14,7 +14,7 @@ function Hero({ english, setEnglish }) {
         <a href="/">
           <h5 className="logo">{english ? "Trehub A." : "Трегуб А."}</h5>
         </a>
-        <div className="languages">
+        {/*  <div className="languages">
           <motion.i
             onClick={() => setEnglish(true)}
             animate={{
@@ -31,7 +31,7 @@ function Hero({ english, setEnglish }) {
           >
             UA
           </motion.i>
-        </div>
+        </div> */}
       </div>
       <div className="box-wrapper">
         <div className="box">

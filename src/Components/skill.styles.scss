@@ -1,10 +1,7 @@
-.skill {
-  background: rgba(0, 0, 0, 0.05);
+$white-page: rgba(0, 0, 0, 0.05);
+$black-page: rgba(255, 255, 255, 0.1);
 
-  h5 {
-    padding: 0.35rem 0.7rem;
-    color: black;
-    font-size: 0.8rem;
-    margin: 0;
-  }
+.skill {
+  background: $white-page;
+  background: $black-page;
 }

@@ -1,5 +1,7 @@
+$green: rgb(37, 202, 127);
 @mixin movingLabel {
   transform: translate(0, -20px) scale(0.85);
+  color: $green;
 }
 
 .form__group {

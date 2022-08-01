@@ -1,14 +1,15 @@
 $green: #2e8b57;
 $grass: rgb(102, 185, 92);
 $light: #2e8b57;
+$brown-black: #1d1d1d;
 
 button.fancy {
   -webkit-appearance: button;
   background-color: transparent;
   border: 2px solid #000;
+  border: 2px solid white;
   border-radius: 0;
   box-sizing: border-box;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   float: right;
@@ -33,7 +34,8 @@ button.fancy {
     content: " ";
     width: 1.5625rem;
     height: 2px;
-    background: black;
+    background: $brown-black;
+    background: white;
     top: 50%;
     left: 1.5em;
     position: absolute;
@@ -55,6 +57,7 @@ button.fancy {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    color: white;
   }
 
   .top-key {
@@ -64,6 +67,7 @@ button.fancy {
     left: 0.625rem;
     position: absolute;
     background: white;
+    background: $brown-black;
     -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
     transition: width 0.5s ease-out, left 0.3s ease-out;
   }
@@ -75,6 +79,7 @@ button.fancy {
     bottom: -2px;
     position: absolute;
     background: white;
+    background: $brown-black;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
@@ -85,21 +90,24 @@ button.fancy {
     bottom: -2px;
     position: absolute;
     background: white;
+    background: $brown-black;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
 
   &:hover {
-    color: white;
     background: black;
+    background: white;
 
     &::before {
       width: 0.9375rem;
       background: white;
+      background: black;
     }
 
     a {
       color: white;
+      color: black;
       padding-left: 1.5em;
     }
 

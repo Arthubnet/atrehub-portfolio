@@ -1,3 +1,4 @@
+$green: rgb(37, 202, 127);
 .contact {
   &__container {
     width: 50%;
@@ -9,14 +10,12 @@
       margin: 0 0 50px 0;
       h2 {
         text-align: center;
-        color: black;
       }
       p {
         width: 75%;
         margin: 20px auto;
         text-align: center;
         font-weight: 500;
-        color: rgb(52, 56, 66);
       }
     }
     .contact__form {
