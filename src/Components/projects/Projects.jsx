@@ -7,7 +7,7 @@ import copyboardGif from "../../assets/img/copy180s.gif";
 import fredGif from "../../assets/img/fred.gif";
 import galleryGif from "../../assets/img/gallery.gif";
 import billboard from "../../assets/img/billboard2.jpg";
-import fred from "../../assets/img/fred3.jpg";
+import fred from "../../assets/img/fred.jpg";
 import gallery from "../../assets/img/gallery.jpg";
 
 class Projects extends Component {
