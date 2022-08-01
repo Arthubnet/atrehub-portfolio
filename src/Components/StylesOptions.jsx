@@ -7,7 +7,7 @@ import gearSvg from "../assets/img/gear.svg";
 import moonSvg from "../assets/img/moon.svg";
 import sunSvg from "../assets/img/sun.svg";
 import usaSvg from "../assets/img/usa.svg";
-import uaSvg from "../assets/img/ukraine.png";
+import uaSvg from "../assets/img/ukraine-heart.png";
 
 /* motion */
 import { motion } from "framer-motion";
