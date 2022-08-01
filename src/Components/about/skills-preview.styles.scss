@@ -1,11 +1,10 @@
-$green: rgb(37, 202, 127);
-
 .skills-preview {
   text-align: left;
   &__icons {
     display: flex;
     gap: 0.8rem;
     &-icon {
+      position: relative;
       width: 3rem;
       height: 3rem;
       border-radius: 0.35rem;
@@ -20,6 +19,22 @@ $green: rgb(37, 202, 127);
       }
       &.large {
         box-shadow: none;
+      }
+      .hover-description {
+        position: absolute;
+        /*  background: rgb(37, 202, 127); */
+        padding: 0 5px;
+        bottom: -25px;
+        opacity: 0;
+        transition: 0.3s;
+        p {
+          margin: 0;
+          font-size: 0.8rem;
+          color: black;
+        }
+      }
+      &:hover .hover-description {
+        opacity: 1;
       }
     }
     .link {

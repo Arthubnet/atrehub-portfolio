@@ -28,20 +28,12 @@ function StylesOptions({ setEnglish, english, theme, setTheme }) {
       <div className="styles-container">
         <h5>Theme Style</h5>
         <div className="styles-container-choises">
-          <div className="moon">
-            <img
-              onClick={() => setTheme((theme = "dark"))}
-              src={moonSvg}
-              alt="moon"
-            />
-            <p>Dark</p>
+          <div onClick={() => setTheme((theme = "dark"))} className="moon">
+            <img src={moonSvg} alt="moon" />
+            <p className="dark">Dark</p>
           </div>
-          <div className="sun">
-            <img
-              onClick={() => setTheme((theme = "light"))}
-              src={sunSvg}
-              alt="sun"
-            />
+          <div onClick={() => setTheme((theme = "light"))} className="sun">
+            <img src={sunSvg} alt="sun" />
             <p>Light</p>
           </div>
         </div>
@@ -49,20 +41,12 @@ function StylesOptions({ setEnglish, english, theme, setTheme }) {
       <div className="styles-container">
         <h5>Languages</h5>
         <div className="styles-container-choises">
-          <div className="usa">
-            <img
-              onClick={() => setEnglish((english = true))}
-              src={usaSvg}
-              alt="usa"
-            />
+          <div onClick={() => setEnglish((english = true))} className="usa">
+            <img src={usaSvg} alt="usa" />
             <p>USA</p>
           </div>
-          <div className="ua">
-            <img
-              onClick={() => setEnglish((english = false))}
-              src={uaSvg}
-              alt="ua"
-            />
+          <div onClick={() => setEnglish((english = false))} className="ua">
+            <img src={uaSvg} alt="ua" />
             <p>UA</p>
           </div>
         </div>

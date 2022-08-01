@@ -18,9 +18,27 @@ function About({ english }) {
     {
       title: english ? "Best Skill On:" : "Кращі навички у:",
       icons: [
-        { icon: ReactIcon, alt: "react-icon", size: "large" },
-        { icon: JsIcon, alt: "javascript-icon", size: "large" },
-        { icon: CSSIcon, alt: "css-icon", size: "large" },
+        {
+          icon: ReactIcon,
+          alt: "react-icon",
+          size: "large",
+          description: "ReactJS",
+          color: "#61dafb",
+        },
+        {
+          icon: JsIcon,
+          alt: "javascript-icon",
+          size: "large",
+          description: "JavaScript",
+          color: "#fcdc00",
+        },
+        {
+          icon: CSSIcon,
+          alt: "css-icon",
+          size: "large",
+          description: "CSS",
+          color: "rgb(56, 120, 177)",
+        },
       ],
     },
 
@@ -97,7 +115,7 @@ function About({ english }) {
           <h3>{english ? "React Web Developer" : "React Web-Розробник"}</h3>
           <p ref={ref}>
             {english
-              ? `My Web path started 12 years ago as Digital Marketing Manager, also
+              ? `My Web path started 9 years ago as Digital Marketing Manager, also
             ran own marketing business based in Ukraine, Kyiv that operated
             within Post-Soviet countries for 5 years. User experience and
             psychology in general was always my passion, but working with
@@ -106,7 +124,7 @@ function About({ english }) {
             through JS React, but also have experience in
             developing full stack applications. To learn more, take a look at my
             latest projects below.`
-              : `Мій шлях у Web почався 12 років потому у ролі Web Маркетолога, володів маркетинговою компанією оперуючою у колишніх странах СНГ на протязі 5 років. Я завжди захоплювався психологією і маркетингом, але щобільше я працював із розробниками, тим більше зьявлялось бажання кодити та створювати свої програми. На данний момент у більшості я користуюсь React бібліотекою, але також маю досвід з full stack розробкою. Щоб дізнатися більше, познайомтеся з моїми проектами нижче.  `}
+              : `Мій шлях у Web почався 9 років потому у ролі Web Маркетолога, володів маркетинговою компанією оперуючою у колишніх странах СНГ на протязі 5 років. Я завжди захоплювався психологією і маркетингом, але щобільше я працював із розробниками, тим більше зьявлялось бажання кодити та створювати свої програми. На данний момент у більшості я користуюсь React бібліотекою, але також маю досвід з full stack розробкою. Щоб дізнатися більше, познайомтеся з моїми проектами нижче.  `}
           </p>
           <div className="about__previews">
             {previews.map(({ title, icons }, index) => (

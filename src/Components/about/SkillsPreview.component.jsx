@@ -11,6 +11,7 @@ function SkillsPreview({ title, icons }) {
           //prettier-ignore
           <div key={index} className={`${item.link ? "link" : ''} ${item.size ? 'large' : ''} skills-preview__icons-icon`}>
             {item.link ? <a href={item.link} target="_blank"><item.icon /></a> : <item.icon />  }
+            <div style={{backgroundColor: item.color  }} className="hover-description"><p>{item.description}</p></div>
           </div>
         )}
       </div>

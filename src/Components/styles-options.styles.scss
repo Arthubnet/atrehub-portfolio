@@ -35,6 +35,10 @@
         font-weight: 500;
         margin: 8px 0;
         padding: 12px 12px;
+        cursor: pointer;
+        &:hover p {
+          color: rgb(37, 202, 127);
+        }
         img {
           width: 25px;
           height: 22px;
@@ -60,10 +64,8 @@
       width: 20px;
       height: 20px;
       animation: rotation 4s linear infinite;
+      cursor: pointer;
     }
-  }
-  img {
-    cursor: pointer;
   }
 }
 @keyframes rotation {
