@@ -18,19 +18,27 @@ class Projects extends Component {
         title: "Copyboard",
         us: `<p key={1}>
                   Redesign of Billboard website, with my own
-                  <span>JavaScript music player</span> that provides all the
+                  <span>Music player</span> that provides all the
                   needed functionality to listen to music while reading news and
                   serfing the website. The project was made only for the
                   portfolio so news are not filled with actual data. Mobile
                   responsive.
                 </p>`,
-        ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>JavaScript музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
+        ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>Музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
         image: billboard,
         color: "#00acc1",
         link: "https://copyboard.herokuapp.com/",
-        github: "https://github.com/Arthubnet/billboard-redesign",
+        github: "https://github.com/Arthubnet/copyboard",
         gif: copyboardGif,
-        skills: [{ skill: "JavaScript" }, { skill: "CSS" }, { skill: "HTML" }],
+        skills: [
+          { skill: "Next.js" },
+          { skill: "React.js" },
+          { skill: "JavaScript" },
+          { skill: "SCSS" },
+          { skill: "Framer Motion" },
+          { skill: "Styled-Components" },
+          { skill: "HTML" },
+        ],
       },
       {
         tech: "Full Stack",
@@ -48,7 +56,7 @@ class Projects extends Component {
         github: "https://github.com/Arthubnet/cloth-e-commerce",
         gif: fredGif,
         skills: [
-          { skill: "React" },
+          { skill: "React.js" },
           { skill: "Redux" },
           { skill: "JavaScript" },
           { skill: "Firebase" },
@@ -78,7 +86,7 @@ class Projects extends Component {
         github: "https://github.com/Arthubnet/images-gallery-frontend",
         gif: galleryGif,
         skills: [
-          { skill: "React" },
+          { skill: "React.js" },
           { skill: "JavaScript" },
           { skill: "Node.js" },
           { skill: "Express.js" },

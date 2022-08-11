@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./project-card.styles.scss";
 
-import gitBtn from "../../../src/assets/img/github2.png";
 import { ReactComponent as GitSvg } from "../../../src/assets/img/github.svg";
 import Skill from "../Skill.component";
 import Button from "./../Button.component";
