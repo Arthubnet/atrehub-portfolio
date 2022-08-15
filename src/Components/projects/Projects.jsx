@@ -33,7 +33,7 @@ class Projects extends Component {
         skills: [
           { skill: "Next.js" },
           { skill: "React.js" },
-          { skill: "JavaScript" },
+          { skill: "TypeScript" },
           { skill: "SCSS" },
           { skill: "Framer Motion" },
           { skill: "Styled-Components" },
