@@ -1,4 +1,7 @@
 .skill {
   user-select: none;
   background: var(--skill-background);
+  h5 {
+    font-weight: 500;
+  }
 }

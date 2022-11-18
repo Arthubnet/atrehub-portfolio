@@ -9,6 +9,9 @@ import galleryGif from "../../assets/img/gallery.gif";
 import billboard from "../../assets/img/billboard2.jpg";
 import fred from "../../assets/img/fred.jpg";
 import gallery from "../../assets/img/gallery.jpg";
+import gymShark from "../../assets/img/Gymshark.jpg";
+import hud from "../../assets/img/hud.jpg";
+import hotTopic from "../../assets/img/HotTopic.png";
 
 class Projects extends Component {
   state = {
@@ -67,7 +70,7 @@ class Projects extends Component {
           { skill: "HTML" },
         ],
       },
-      {
+      /* {
         tech: "MERN Stack",
         title: "Images Gallery",
         us: `<p key={3}>
@@ -98,9 +101,91 @@ class Projects extends Component {
           { skill: "CSS" },
           { skill: "Bootstrap" },
         ],
+      }, */
+      {
+        tech: "iOS, Android",
+        title: "Gymshark - Fitness app",
+        us: `<p key={1}>
+                  There's a better way to train, and it's just an app away. Find home workouts at your fingertips. Discover an entire library of home and gym workouts so you're never stuck in a rut again. Customise and personalise your own exercise training plan with moves to suit you.
+
+                  Create home or gym workout routines that work for you, your goals and your lifestyle, customise your own workout using Gymshark’s extensive exercise library, or make today the day you start an athlete plan. You can even check out our top 10 workouts of the day and always know what's trending in the training world. Whatever your goal, at the gym or home, there's a workout for you.
+                </p>`,
+        ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>Музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
+        image: gymShark,
+        color: "#00acc1",
+        link: "https://www.gymshark.com/",
+        github: "",
+        gif: gymShark,
+        skills: [
+          { skill: "iOS" },
+          { skill: "Android" },
+          { skill: "React-Native" },
+          { skill: "JavaScript" },
+          { skill: "TypeScript" },
+          { skill: "Swift" },
+          { skill: "Kotlin" },
+          { skill: "Firebase" },
+          { skill: "Node.js" },
+          { skill: "React" },
+          { skill: "MongoDB" },
+        ],
+      },
+      {
+        tech: "iOS, Android",
+        title: "Social Networking App",
+        us: `<p key={1}>
+                  HUD™ app is a casual dating app that is honest about the realities of online dating.
+                  HUD™ Specific Features:
+                  Video chat with auto blur safety feature
+                  Send and receive videos, photos, and audio messages
+                  Female-friendly chat features
+                  Photo Protection Blur
+                  Advanced search options
+                </p>`,
+        ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>Музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
+        image: hud,
+        color: "#00acc1",
+        link: "https://www.hudapp.com/",
+        github: "",
+        gif: hud,
+        skills: [
+          { skill: "iOS" },
+          { skill: "Android" },
+          { skill: "Swift" },
+          { skill: "Java" },
+          { skill: "Firebase" },
+          { skill: "WebRTC" },
+          { skill: "Twillio" },
+          { skill: "TypeScript" },
+          { skill: "Kotlin" },
+        ],
+      },
+      {
+        tech: "iOS, Android",
+        title: "Shopping App",
+        us: `<p key={1}>
+                  Shop your favorite Hot Topic merch wherever you are with the revamped Hot Topic app! It's now easier than ever to browse our huge selection of officially licensed music and pop culture merch for all fandoms. Whether you want new tees or fresh hoodies, the latest fashion trends for guys, girls and plus sizes, band merch to turn up your look, anime styles you can wear head to toe, the coolest Funko drops and collectibles, home décor items, or mini backpacks and jewelry for your 'fit — we've got it.
+                </p>`,
+        ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>Музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
+        image: hotTopic,
+        color: "#00acc1",
+        link: "https://www.hottopic.com/",
+        github: "",
+        gif: hotTopic,
+        skills: [
+          { skill: "iOS" },
+          { skill: "Android" },
+          { skill: "React-Native" },
+          { skill: "TypeScript" },
+          { skill: "Swift" },
+          { skill: "Kotlin" },
+          { skill: "Firebase" },
+          { skill: "PHP" },
+          { skill: "MySQL" },
+        ],
       },
 
-      {
+      /* {
         tech: "MERN Stack",
         title: "Coming soon",
         us: "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
@@ -111,7 +196,7 @@ class Projects extends Component {
         github: "",
         gif: fredGif,
         skills: [{ skill: "HTML" }, { skill: "CSS" }, { skill: "JavaScript" }],
-      },
+      }, */
     ],
   };
   render() {
@@ -120,42 +205,40 @@ class Projects extends Component {
       <section className="projects">
         <div className="container">
           {/*  <h2 className="project-title">Projects</h2> */}
-          {this.state.card
-            .filter((item, index) => index < 3)
-            .map(
-              (
-                {
-                  title,
-                  description,
-                  image,
-                  color,
-                  link,
-                  github,
-                  gif,
-                  tech,
-                  skills,
-                  ua,
-                  us,
-                },
-                index
-              ) => (
-                <ProjectCard
-                  english={english}
-                  key={index}
-                  title={title}
-                  description={description}
-                  image={image}
-                  color={color}
-                  link={link}
-                  github={github}
-                  gif={gif}
-                  tech={tech}
-                  skills={skills}
-                  ua={ua}
-                  us={us}
-                />
-              )
-            )}
+          {this.state.card.map(
+            (
+              {
+                title,
+                description,
+                image,
+                color,
+                link,
+                github,
+                gif,
+                tech,
+                skills,
+                ua,
+                us,
+              },
+              index
+            ) => (
+              <ProjectCard
+                english={english}
+                key={index}
+                title={title}
+                description={description}
+                image={image}
+                color={color}
+                link={link}
+                github={github}
+                gif={gif}
+                tech={tech}
+                skills={skills}
+                ua={ua}
+                us={us}
+              />
+            )
+          )}
         </div>
       </section>
     );

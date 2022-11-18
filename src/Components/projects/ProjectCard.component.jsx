@@ -50,9 +50,11 @@ function ProjectCard({
           <Button link={link}>
             {english ? "Open Project" : "Відкрити проект"}
           </Button>
-          <a className="github-link" href={github} target="_blank">
-            <GitSvg />
-          </a>
+          {github ? (
+            <a className="github-link" href={github} target="_blank">
+              <GitSvg />
+            </a>
+          ) : null}
         </div>
       </motion.div>
       <motion.div
