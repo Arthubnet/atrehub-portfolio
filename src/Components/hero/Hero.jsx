@@ -7,7 +7,6 @@ import { ReactComponent as LinkedinSvg } from "../../assets/img/linkedin.svg";
 import { motion } from "framer-motion";
 
 function Hero({ english }) {
-  console.log("re - render");
   return (
     <motion.section className="hero">
       <div className="navbar">
