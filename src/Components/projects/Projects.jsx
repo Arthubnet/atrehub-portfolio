@@ -30,7 +30,7 @@ class Projects extends Component {
         ua: `<p key={1}>Редизайн вебсайта Billboard, з моїм авторським <span>Музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. Сайт адаптивний для мобільніх пристроїв</p>`,
         image: billboard,
         color: "#00acc1",
-        link: "https://copyboard.herokuapp.com/",
+        link: "https://copyboard.onrender.com",
         github: "https://github.com/Arthubnet/copyboard",
         gif: copyboardGif,
         skills: [
@@ -55,7 +55,7 @@ class Projects extends Component {
         ua: `<p key={2}>Редизайн вебсайта Billboard, з моїм авторським <span>JavaScript музикальним плеєром</span> котрий надає можливість прослуховувати музику під час використання та перегляду сайта. Цей проект був створений виключно для портфоліо, тому об'ємні секціі заповнені випадковим текстом. електронна комерція</p>`,
         image: fred,
         color: "#f44336",
-        link: "https://fred-ecommerce-project.herokuapp.com/",
+        link: "https://fred-ecommerce.onrender.com",
         github: "https://github.com/Arthubnet/cloth-e-commerce",
         gif: fredGif,
         skills: [
