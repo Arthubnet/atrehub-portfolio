@@ -184,19 +184,6 @@ class Projects extends Component {
           { skill: "MySQL" },
         ],
       },
-
-      /* {
-        tech: "MERN Stack",
-        title: "Coming soon",
-        us: "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ...",
-        ua: `<p key={1}>E-commerce проект на React. Грамотно сформовані Компоненти за допомогою Redux state management надають можливість використовувати данний проект на будь язих масштабах. Персоналізований візок, Платіжна система та Еффективний роутінг роблять сайт логічним для використання користувачу.</p>`,
-        image: "",
-        color: "#344767",
-        link: "",
-        github: "",
-        gif: fredGif,
-        skills: [{ skill: "HTML" }, { skill: "CSS" }, { skill: "JavaScript" }],
-      }, */
     ],
   };
   render() {
